@@ -1,0 +1,136 @@
+/* Tailwind base styles, components and utilities swapped in with npm run build */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg-color-primary: #09306d;
+  --text-color-primary: #d2b83e;
+}
+
+.ratio-1 {
+  aspect-ratio: 1;
+}
+
+.bg-color-white {
+  background-color: white;
+}
+
+.text-color-primary {
+  color: var(--text-color-primary);
+}
+
+.bg-color-primary {
+  background-color: var(--bg-color-primary);
+}
+
+.bg-overlay {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -10;
+  filter: brightness(50%);
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.bg-overlay-dark {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -10;
+  filter: brightness(30%);
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.bg-footer {
+  background-color: #05193b;
+}
+
+.color-accent {
+  color: #b3cdff;
+}
+
+.color-check {
+  color: #6b84b3;
+}
+
+.btn-bg {
+  background-color: #ccdeff;
+}
+
+.icon-bg {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+}
+
+.logo {
+  max-width: 10rem;
+  min-width: 7rem;
+}
+
+.vl {
+  border-color: black;
+  border-left: 8px solid;
+}
+
+.text-gap {
+  margin-left: -0.3rem;
+}
+
+.nav {
+  transform: translateX(-9rem);
+  transition: all 0.4s;
+}
+
+.nav.show {
+  transform: translateX(0);
+}
+
+.nav-overlay {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 10;
+}
+
+.swiper-pagination-bullet {
+  background-color: white !important;
+}
+
+.nav-close:hover {
+  background-color: white;
+  color: var(--bg-color-primary);
+  transition: all 0.4s;
+}
+
+a {
+  text-decoration: none;
+}
+
+iframe {
+  width: 100%;
+  height: 100%;
+  aspect-ratio: 1;
+}
+
+.fa-brands:hover {
+  color: var(--text-color-primary);
+}
+
+@media (min-width: 768px) {
+  .text-gap {
+    margin-left: -0.5rem;
+  }
+}

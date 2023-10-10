@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="
+      Law Office of Hong-min Jun, is an Indiana based law firm dedicated to providing strong legal representation for clients throughout the state of Indiana.
+      "
+    />
+    <title>Law Office of Hong-min Jun</title>
+
+    <!-- CSS Files -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="nofollow"
+    />
+    <link rel="stylesheet" href="styles/index.css" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <!-- Google tag (gtag.js) -->
+  <script
+    async
+    src="https://www.googletagmanager.com/gtag/js?id=G-JGET5W7JRZ"
+  ></script>
+  <script>
+    window.dataLayer = window.dataLayer || []
+    function gtag() {
+      dataLayer.push(arguments)
+    }
+    gtag('js', new Date())
+
+    gtag('config', 'G-JGET5W7JRZ')
+  </script>
+  <body>
+    <main>
+      <nav
+        class="container mx-auto flex items-center justify-center lg:justify-between py-2 px-4"
+      >
+        <!-- Navbar on overlay in mobile screen -->
+        <div class="nav-overlay hidden" id="nav-overlay"></div>
+        <!-- Hamburger Menu Icon -->
+        <div class="lg:hidden">
+          <button id="menu-toggle" class="text-black focus:outline-none">
+            <i class="fa-solid fa-bars text-2xl"></i>
+          </button>
+        </div>
+        <!-- Logo -->
+        <div class="logo mx-auto lg:mx-0">
+          <a href="index.html">
+            <img class="w-full" alt="logo" src="images/logo.jpg" />
+          </a>
+        </div>
+        <!-- Nav list -->
+        <ul
+          id="nav-list"
+          class="nav fixed left-0 top-0 h-full w-36 p-8 bg-color-primary text-white z-20 text-sm font-semibold space-y-4 lg:w-auto lg:bg-white lg:relative lg:p-0 lg:text-black lg:flex lg:items-center lg:space-y-0 lg:space-x-7 lg:translate-x-0"
+        >
+          <li><a href="index.html" class="uppercase">home</a></li>
+          <li><a href="about.html" class="uppercase">about</a></li>
+          <li><a href="practice.html" class="uppercase">practice</a></li>
+          <li><a href="blog.html" class="uppercase">blog</a></li>
+          <li><a href="#contact.html" class="uppercase">contact</a></li>
+          <li class="lg:hidden">
+            <div
+              id="nav-close"
+              class="nav-close w-8 h-8 rounded-full border border-white flex items-center justify-center mx-auto mt-8 cursor-pointer"
+            >
+              <i class="fa-solid fa-x"></i>
+            </div>
+          </li>
+        </ul>
+      </nav>
+      <!-- Hero -->
+      <section class="relative pt-10 pb-4">
+        <img src="images/hero.jpeg" alt="hero image" class="bg-overlay" />
+        <!-- Main landing -->
+        <div
+          class="flex justify-center items-center mt-6 py-12 md:py-20 lg:py-36 lg:gap-x-24 xl:max-w-screen-2xl xl:mx-auto xl:py-40 2xl:py-60"
+        >
+          <div class="px-4">
+            <!-- Text Container-->
+            <div class="w-full text-white tracking-wide">
+              <h1
+                class="font-bold text-4xl leading-relaxed md:leading-normal md:text-5xl lg:text-6xl xl:text-7xl pb-4"
+              >
+                Meet Your
+                <br class="md:hidden" />
+                <span class="text-color-primary">Experienced</span>
+                Attorney
+              </h1>
+              <p
+                class="mt-4 mb-8 tracking-normal md:w-3/4 md:text-lg lg:text-2xl lg:w-full"
+              >
+                For foreign born-individuals and small business owners.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Services -->
+      <section class="bg-gray-50 pb-16 px-8">
+        <div class="mx-auto pt-20">
+          <!-- Title -->
+          <h2 class="text-center text-3xl font-bold md:text-4xl lg:text-5xl">
+            Featured Services
+          </h2>
+
+          <!-- Features -->
+          <div
+            class="grid grid-cols-1 gap-8 mt-16 mx-auto md:grid-cols-2 lg:grid-cols-4"
+          >
+            <!-- Feature box 1-->
+            <div
+              class="flex items-stretch justify-between flex-col mx-auto px-8 py-12 rounded-md shadow-md bg-white"
+            >
+              <h2 class="text-lg text-center font-bold mb-4 text-gray-800">
+                Green Card through Marriage
+              </h2>
+              <p class="text-left text-gray-700">
+                If you are the spouse of a US citizen, no matter where you were
+                married, you may be eligible to apply for Lawful Permanent
+                Residence (also called “Green Card”) through either Consular
+                processing or Adjustment of Status.
+              </p>
+              <!-- Learn more button -->
+              <div class="text-center mt-12">
+                <a
+                  href="../column.html#column-main"
+                  class="text-sm uppercase text-white bg-color-primary p-4 rounded-sm font-semibold tracking-widest shadow-md"
+                  >learn more</a
+                >
+              </div>
+            </div>
+            <!-- Feature box 2-->
+            <div
+              class="flex items-center justify-between flex-col mx-auto px-8 py-12 shadow-md rounded-md bg-white"
+            >
+              <h2 class="text-lg text-center font-bold mb-4 text-gray-800">
+                National Interest Waiver
+              </h2>
+              <p class="text-left text-gray-700">
+                If you are holding a Master Degree or higher and consider
+                yourself to be contributory to the development of U.S national
+                interest and can prove it, you may petition yourself for Lawful
+                Permanent Resident on your own!
+              </p>
+              <!-- Learn more button -->
+              <div class="text-center mt-12">
+                <a
+                  href="../column.html#column-main"
+                  class="text-sm uppercase text-white bg-color-primary p-4 rounded-sm font-semibold tracking-widest tracking-widest shadow-md"
+                  >learn more</a
+                >
+              </div>
+            </div>
+            <!-- Feature box 3-->
+            <div
+              class="flex items-center justify-between flex-col mx-auto px-8 py-12 shadow-md rounded-md bg-white"
+            >
+              <div>
+                <h2 class="text-lg text-center font-bold mb-4 text-gray-800">
+                  International Entrepreneur Parole
+                </h2>
+                <p class="text-left text-gray-700">
+                  This program is to encourage foreign entrepreneurs to create
+                  start-up entities with high growth potential in the US, which
+                  are creates jobs for US workers, and benefit the U.S economy.
+                </p>
+              </div>
+              <!-- Learn more button -->
+              <div class="text-center mt-12">
+                <a
+                  href="../column.html#column-main"
+                  class="text-sm uppercase text-white bg-color-primary p-4 rounded-sm font-semibold tracking-widest tracking-widest shadow-md"
+                  >learn more</a
+                >
+              </div>
+            </div>
+            <!-- Feature box 4-->
+            <div
+              class="flex items-center justify-between flex-col mx-auto px-8 py-12 rounded-md shadow-md bg-white"
+            >
+              <h2 class="text-lg text-center font-bold mb-4 text-gray-800">
+                Treaty Investment Visa (E2)
+              </h2>
+              <p class="text-left text-gray-700">
+                If you have a dream of becoming an entrepreneur, you make it
+                come true by Treaty Investment visa/status (E2). With E2
+                visa/status, you can stay in the US doing a business you dreamed
+                to do. The status is valid for two years.
+              </p>
+              <!-- Learn more button -->
+              <div class="text-center mt-12">
+                <a
+                  href="../column.html#column-main"
+                  class="text-sm uppercase shadow-sm text-white bg-color-primary p-4 rounded-sm font-semibold tracking-widest shadow-md"
+                  >learn more</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- About -->
+      <section class="relative text-white">
+        <img src="images/about.jpeg" alt="About image" class="bg-overlay" />
+        <div class="container mx-auto py-16 px-12">
+          <div>
+            <!-- Title -->
+            <h2 class="text-3xl font-bold mr-auto md:text-4xl lg:text-5xl">
+              About
+            </h2>
+            <!-- Intro -->
+            <p class="max-w-screen-sm mt-8 leading-relaxed lg:text-lg">
+              Our firm serves a diverse client base with matters regarding
+              Personal and Workplace Injuries, Immigration, and Business
+              Representation. Law Office of Hong-min Jun, distinguishes itself
+              by providing aggressive, effective, and experienced representation
+              to our clients that we represent.
+            </p>
+          </div>
+
+          <!-- Learn more button -->
+          <div class="mr-auto mt-12">
+            <a
+              href="../column.html#column-main"
+              class="uppercase text-sm border border-white p-4 rounded-sm text-white tracking-widest font-semibold"
+              >learn more</a
+            >
+          </div>
+        </div>
+      </section>
+
+      <!--  Blog -->
+      <section class="leading-loose bg-gray-100">
+        <!-- Headings and text container -->
+        <div class="container mx-auto px-4 pt-20 pb-24">
+          <!-- Heading and description -->
+          <h2 class="text-center text-3xl font-bold md:text-4xl lg:text-5xl">
+            Latest News
+          </h2>
+
+          <!-- Blog cards -->
+          <div
+            class="grid grid-cols-1 gap-x-8 gap-y-8 mt-16 grid-custom md:gap-y-8 md:grid-cols-2 lg:grid-cols-4"
+          >
+            <!-- Blog card 1-->
+            <div class="bg-gray-100">
+              <div class="rounded h-full overflow-hidden shadow-lg bg-white">
+                <img
+                  src="images/blog-thumbnails/thumbnail-1.jpeg"
+                  alt="Blog Post Image 1"
+                />
+                <div class="px-6 py-4">
+                  <h3 class="font-bold text-xl mb-2">
+                    L1 Visa – US Intra Company Transferee Visa
+                  </h3>
+                  <p class="text-gray-700 text-sm">August 17, 2023</p>
+                  <p class="text-gray-700 text-base mt-4">
+                    Proving a qualifying relationship between a U.S. company and
+                    a foreign parent company is crucial for an L1 visa
+                    application, which is designed for intracompany
+                    transferees...
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- Blog card 2-->
+            <div class="bg-gray-100">
+              <div class="rounded h-full overflow-hidden shadow-lg bg-white">
+                <img
+                  src="images/blog-thumbnails/thumbnail-2.jpeg"
+                  alt="Blog Post Image"
+                />
+                <div class="px-6 py-4 grow">
+                  <h3 class="font-bold text-xl mb-2">
+                    Waiver of Inadmissibility : Extreme Hardship Standards
+                  </h3>
+                  <p class="text-gray-700 text-sm">July 13, 2023</p>
+                  <p class="text-gray-700 text-base mt-4">
+                    The extreme hardship waiver, formally known as the
+                    “Provisional Unlawful Presence Waiver,” is available to
+                    certain individuals who are in the United States...
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- Blog card 3-->
+            <div class="bg-gray-100">
+              <div class="rounded h-full overflow-hidden shadow-lg bg-white">
+                <img
+                  src="images/blog-thumbnails/thumbnail-3.jpeg"
+                  alt="Blog Post Image"
+                />
+                <div class="px-6 py-4">
+                  <h3 class="font-bold text-xl mb-2">
+                    Importance of have a Will prepared from an Immigrant’s
+                    perspective
+                  </h3>
+                  <p class="text-gray-700 text-sm">June 13, 2023</p>
+                  <p class="text-gray-700 text-base mt-4">
+                    In the pursuit of new beginnings in a foreign land,
+                    immigrants often find themselves immersed in a whirlwind of
+                    new experiences, challenges, and opportunities...
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- Blog card 4-->
+            <div class="bg-gray-100">
+              <div class="rounded h-full overflow-hidden shadow-lg bg-white">
+                <img
+                  src="images/blog-thumbnails/thumbnail-4.jpeg"
+                  alt="Blog Post Image"
+                />
+                <div class="px-6 py-4">
+                  <h3 class="font-bold text-xl mb-2">
+                    Employment-Based Green Card Priority Date Retrogression
+                  </h3>
+                  <p class="text-gray-700 text-sm">June 11, 2023</p>
+                  <p class="text-gray-700 text-base mt-4">
+                    According to the visa bulletin released in 2023, priority
+                    dates have retrogressed in some employment-based immigration
+                    categories. Specifically, the priority dates for EB3...
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Learn more button -->
+          <div class="flex justify-center mt-16">
+            <a
+              href="#"
+              class="uppercase font-semibold inline-block text-white bg-color-primary shadow-md py-4 px-12 rounded-sm tracking-wider lg:text-xl"
+              >read more</a
+            >
+          </div>
+        </div>
+      </section>
+
+      <!-- Testimonials -->
+      <section class="relative py-4 overflow-x-hidden">
+        <img
+          src="images/testimonials.jpeg"
+          alt="Testimonials image"
+          class="bg-overlay-dark"
+        />
+        <!-- Testimonial slides container -->
+        <div class="swiper-container">
+          <div class="swiper-wrapper flex items-center">
+            <!-- Testimonial 1 -->
+            <div class="swiper-slide">
+              <div
+                class="max-w-screen-md p-6 shadow-md mx-auto rounded-md flex flex-col justify-center md:text-lg"
+              >
+                <p
+                  class="text-white leading-relaxed max-w-none lg:leading-loose"
+                >
+                  Attorney Jun does a good job in his work. He is very
+                  experienced and diligent in his practice. He and his team
+                  always respond timely to clients’ emails and calls. And his
+                  fees are reasonable. His office offers Chinese and Korean
+                  services as well, which is very helpful for non-English
+                  speakers. I recommend this law office if you are seeking
+                  immigration law or family law services.
+                </p>
+                <h4 class="mt-4 text-sm font-semibold text-white text-right">
+                  Chen C.
+                </h4>
+              </div>
+            </div>
+            <!-- Testimonial 2 -->
+            <div class="swiper-slide">
+              <div
+                class="max-w-screen-md p-6 shadow-md mx-auto rounded-md flex flex-col justify-center md:text-lg"
+              >
+                <p
+                  class="text-white leading-relaxed max-w-none lg:leading-loose"
+                >
+                  Law office of Hongmin Jun helped us on our Immigration
+                  interview, he was brilliant and on point, professional. If you
+                  have any concern passing your Immigration interview you need
+                  to contact Mr. Hongmin he will fight for you to get your
+                  Naturalization promptly.
+                </p>
+                <h4 class="mt-4 text-sm font-semibold text-white text-right">
+                  Nicholas F.
+                </h4>
+              </div>
+            </div>
+            <!-- Testimonial 3-->
+            <div class="swiper-slide">
+              <div
+                class="max-w-screen-md p-6 shadow-md mx-auto rounded-md flex flex-col justify-center md:text-lg"
+              >
+                <p
+                  class="text-white leading-relaxed max-w-none lg:leading-loose"
+                >
+                  We applied for i-485 through marriage during college before
+                  COVID-19 and he stayed in contact and helped us when the
+                  pandemic hit and while the US got stricter on immigration. We
+                  had no idea how to balance work, school, and file for
+                  immigration. Thank you for representing us and taking a huge
+                  burden off of us!
+                </p>
+                <h4 class="mt-4 text-sm font-semibold text-white text-right">
+                  Khalid S.
+                </h4>
+              </div>
+            </div>
+            <!-- Testimonial 4 -->
+            <div class="swiper-slide">
+              <div
+                class="max-w-screen-md p-6 shadow-md mx-auto rounded-md flex flex-col justify-center md:text-lg"
+              >
+                <p
+                  class="text-white leading-relaxed max-w-none lg:leading-loose"
+                >
+                  Attorney Jun provides very valuable legal advises for
+                  international students during the workshop session. He is
+                  experienced in immigration area and he cares about us!
+                </p>
+                <h4 class="mt-4 text-sm font-semibold text-white text-right">
+                  A. N.
+                </h4>
+              </div>
+            </div>
+            <!-- Testimonial 5 -->
+            <div class="swiper-slide">
+              <div
+                class="max-w-screen-md p-6 shadow-md mx-auto rounded-md flex flex-col justify-center md:text-lg"
+              >
+                <p
+                  class="text-white leading-relaxed max-w-none lg:leading-loose"
+                >
+                  My husband and went to visit attorney Hong min Jun for more
+                  information about immigration and let me tell everyone who is
+                  looking for an attorney, he very nice, answers all your
+                  questions, and most important HONEST and LOYAL.
+                </p>
+                <h4 class="mt-4 text-sm font-semibold text-white text-right">
+                  J. C.
+                </h4>
+              </div>
+            </div>
+            <!-- Testimonial 6 -->
+            <div class="swiper-slide">
+              <div
+                class="max-w-screen-md p-6 shadow-md mx-auto rounded-md flex flex-col justify-center md:text-lg"
+              >
+                <p
+                  class="text-white leading-relaxed max-w-none lg:leading-loose"
+                >
+                  We learned about The Hongmin firm through our office and they
+                  were wonderful. Not only did they help us find the best
+                  solution but they were quick, efficient, and responsiveness in
+                  helping us to achieve the results. Thank you all at The
+                  Hongmin!
+                </p>
+                <h4 class="mt-4 text-sm font-semibold text-white text-right">
+                  Christiano L.
+                </h4>
+              </div>
+            </div>
+            <!-- Testimonial 7 -->
+            <div class="swiper-slide">
+              <div
+                class="max-w-screen-md p-6 shadow-md mx-auto rounded-md flex flex-col justify-center md:text-lg"
+              >
+                <p
+                  class="text-white leading-relaxed max-w-none lg:leading-loose"
+                >
+                  Attorney Jun is an excellent attorney who helped me
+                  tremendously with my case and kept me informed every step of
+                  the way. I highly recommend him to anyone!
+                </p>
+                <h4 class="mt-4 text-sm font-semibold text-white text-right">
+                  Drew M.
+                </h4>
+              </div>
+            </div>
+            <!-- Testimonial 8 -->
+            <div class="swiper-slide">
+              <div
+                class="max-w-screen-md p-6 shadow-md mx-auto rounded-md flex flex-col justify-center md:text-lg"
+              >
+                <p
+                  class="text-white leading-relaxed max-w-none lg:leading-loose"
+                >
+                  Attorney Jun is an immigration expert, he used his wealth of
+                  experience to breakdown my issue without a consultation or any
+                  other form charges, his team is ready and willing to help.
+                </p>
+                <h4 class="mt-4 text-sm font-semibold text-white text-right">
+                  H. G.
+                </h4>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination mb-4"></div>
+        </div>
+      </section>
+
+      <!-- Contact -->
+      <section
+        class="flex flex-col items-center py-20 bg-gray-100"
+        id="contact"
+      >
+        <!-- Title -->
+        <h2 class="text-3xl font-bold md:text-4xl lg:text-5xl">Contact</h2>
+
+        <!-- Office Container -->
+        <div
+          class="grid grid-cols-1 justify-center items-center mt-24 gap-x-24 px-8 md:grid-cols-2"
+        >
+          <!-- Office -->
+          <div class="space-y-4 text-center">
+            <strong class="mb-4 inline-block text-lg">Indiana Office</strong>
+            <!-- Address -->
+            <div class="flex items-center text-left">
+              <i class="fa-solid fa-location-dot mr-2"></i>
+              <span class="text-sm"
+                >10150 Lantern Road Suite #175 Fishers, Indiana 46037</span
+              >
+            </div>
+            <!-- Email -->
+            <div class="flex items-center">
+              <i class="fa-solid fa-envelope mr-2"></i>
+              <span class="text-sm">AskUs@junlawfirm.com </span>
+            </div>
+            <!-- Phone -->
+            <div class="flex items-center">
+              <i class="fa-solid fa-phone mr-2"></i>
+              <span class="text-sm">317-701-2768 </span>
+            </div>
+            <!-- Map -->
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6118.53265660366!2d-86.01452!3d39.935432!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8814b3605765366d%3A0x1f17e54d8bb08379!2s10150%20Lantern%20Rd%20%23%20175%2C%20Fishers%2C%20IN%2046037!5e0!3m2!1sen!2sus!4v1696625240322!5m2!1sen!2sus"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              class="mt-4"
+            ></iframe>
+          </div>
+          <!-- Office -->
+          <div class="space-y-4 text-center mt-8 md:mt-0">
+            <strong class="mb-4 inline-block text-lg">Illinois Office</strong>
+            <!-- Address -->
+            <div class="flex items-center text-left">
+              <i class="fa-solid fa-location-dot mr-2"></i>
+              <span class="text-sm"
+                >1900 E. Golf Road Suite #950 Schaumburg, IL 60175</span
+              >
+            </div>
+            <!-- Email -->
+            <div class="flex items-center">
+              <i class="fa-solid fa-envelope mr-2"></i>
+              <span class="text-sm">AskUs@junlawfirm.com </span>
+            </div>
+            <!-- Phone -->
+            <div class="flex items-center">
+              <i class="fa-solid fa-phone mr-2"></i>
+              <span class="text-sm">847-660-4233</span>
+            </div>
+            <!-- Map -->
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d23700.730978277315!2d-88.032211!3d42.051942!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880faf8d5a85c343%3A0xa21383c99e5219ca!2s1900%20E%20Golf%20Rd%20950%20h%2C%20Schaumburg%2C%20IL%2060173!5e0!3m2!1sen!2sus!4v1696626958530!5m2!1sen!2sus"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              class="mt-4"
+            ></iframe>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer
+      class="relative flex flex-col items-center justify-between px-4 pt-8 bg-footer text-white"
+    >
+      <!-- Social Links & Copyright-->
+      <div
+        class="flex flex-col items-center text-xs mb-4 text-gray-300 lg:mb-6"
+      >
+        <!-- Social Links -->
+        <div class="flex justify-center items-center space-x-6 mt-2 mb-4">
+          <a
+            href="https://www.facebook.com/attorneyHongmin/"
+            target="_blank"
+            rel="noopener noreferrer"
+            ><i class="fa-brands fa-facebook fa-2x"></i
+          ></a>
+          <a
+            href="https://www.linkedin.com/in/hong-min-jun-74696b129/"
+            target="_blank"
+            rel="noopener noreferrer"
+            ><i class="fa-brands fa-linkedin-in fa-2x"></i
+          ></a>
+          <a
+            href="https://www.youtube.com/channel/UCTdlANUzhWd-q1nQWZrwe1A"
+            target="_blank"
+            rel="noopener noreferrer"
+            ><i class="fa-brands fa-youtube fa-2x"></i
+          ></a>
+        </div>
+        <!-- Copyright -->
+        <div class="font-medium mb-1">
+          &copy; Law Office of Hong-min Jun. All Rights Reserved.
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/index.js"></script>
+  </body>
+</html>
