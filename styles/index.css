@@ -3,6 +3,13 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer components {
+  /* added to tailwind.config.js */
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
 :root {
   --bg-color-primary: #09306d;
   --text-color-primary: #d2b83e;
@@ -112,6 +119,11 @@
 .nav-close:hover {
   background-color: white;
   color: var(--bg-color-primary);
+  transition: all 0.4s;
+}
+
+.practice-list a:hover {
+  text-decoration: underline;
   transition: all 0.4s;
 }
 

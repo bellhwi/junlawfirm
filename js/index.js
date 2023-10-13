@@ -21,18 +21,25 @@ const menuToggle = document.getElementById('menu-toggle')
 const navList = document.getElementById('nav-list')
 const navClose = document.getElementById('nav-close')
 const navOverlay = document.getElementById('nav-overlay')
+const contactMenu = document.getElementById('contact-menu')
 
-menuToggle.addEventListener('click', () => {
+function toggleNavbar() {
   navList.classList.toggle('show')
   navOverlay.classList.toggle('hidden')
+}
+
+menuToggle.addEventListener('click', () => {
+  toggleNavbar()
 })
 
 navClose.addEventListener('click', () => {
-  navList.classList.toggle('show')
-  navOverlay.classList.toggle('hidden')
+  toggleNavbar()
 })
 
 navOverlay.addEventListener('click', () => {
-  navList.classList.toggle('show')
-  navOverlay.classList.toggle('hidden')
+  toggleNavbar()
+})
+
+contactMenu.addEventListener('click', () => {
+  toggleNavbar()
 })

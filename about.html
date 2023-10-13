@@ -21,7 +21,6 @@
       referrerpolicy="nofollow"
     />
     <link rel="stylesheet" href="styles/index.css" />
-    <link rel="stylesheet" href="styles/tailwind.css" />
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
@@ -32,48 +31,52 @@
     />
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
   </head>
-  <!-- Google tag (gtag.js) -->
-  <script
-    async
-    src="https://www.googletagmanager.com/gtag/js?id=G-JGET5W7JRZ"
-  ></script>
-  <script>
-    window.dataLayer = window.dataLayer || []
-    function gtag() {
-      dataLayer.push(arguments)
-    }
-    gtag('js', new Date())
 
-    gtag('config', 'G-JGET5W7JRZ')
-  </script>
   <body>
     <main>
       <nav
-        class="container mx-auto flex items-center justify-between py-2 px-8"
+        class="container mx-auto flex items-center justify-center lg:justify-between py-2 px-4"
       >
-        <!-- Logo -->
-        <div class="flex justify-start">
-          <div class="logo">
-            <a href="index.html">
-              <img class="w-full" alt="logo" src="images/logo.jpg" />
-            </a>
-          </div>
+        <!-- Navbar on overlay in mobile screen -->
+        <div class="nav-overlay hidden" id="nav-overlay"></div>
+        <!-- Hamburger Menu Icon -->
+        <div class="lg:hidden">
+          <button id="menu-toggle" class="text-black focus:outline-none">
+            <i class="fa-solid fa-bars text-2xl"></i>
+          </button>
         </div>
-
+        <!-- Logo -->
+        <div class="logo mx-auto lg:mx-0">
+          <a href="index.html">
+            <img class="w-full" alt="logo" src="images/logo.jpg" />
+          </a>
+        </div>
         <!-- Nav list -->
-        <ul class="list-none flex text-sm space-x-7 font-semibold">
-          <a href="index.html"><li class="uppercase">home</li></a>
-          <a href="about.html"><li class="uppercase">about</li></a>
-          <a href="practice.html"><li class="uppercase">practice</li></a>
-          <a href="blog.html"><li class="uppercase">blog</li></a>
-          <a href="#contact.html"><li class="uppercase">contact</li></a>
+        <ul
+          id="nav-list"
+          class="nav fixed left-0 top-0 h-full w-36 p-8 bg-color-primary text-white z-20 text-sm font-semibold space-y-4 lg:w-auto lg:bg-white lg:relative lg:p-0 lg:text-black lg:flex lg:items-center lg:space-y-0 lg:space-x-7 lg:translate-x-0"
+        >
+          <li><a href="index.html" class="uppercase">home</a></li>
+          <li><a href="about.html" class="uppercase">about</a></li>
+          <li><a href="practice.html" class="uppercase">practice</a></li>
+          <li><a href="blog.html" class="uppercase">blog</a></li>
+          <li><a href="index.html#contact" class="uppercase">contact</a></li>
+          <li class="lg:hidden">
+            <div
+              id="nav-close"
+              class="nav-close w-8 h-8 rounded-full border border-white flex items-center justify-center mx-auto mt-8 cursor-pointer"
+            >
+              <i class="fa-solid fa-x"></i>
+            </div>
+          </li>
         </ul>
       </nav>
 
       <!-- Hero -->
       <section class="relative pt-10 pb-4">
-        <img src="images/about-page.jpg" alt="hero image" class="bg-overlay" />
+        <img src="images/about/hero.jpg" alt="hero image" class="bg-overlay" />
         <!-- Main landing -->
         <div class="container mx-auto py-24">
           <h1
@@ -88,11 +91,11 @@
       <section class="bg-gray-50 pb-16 px-4">
         <div class="container mx-auto pt-20">
           <!-- Title -->
-          <h2 class="text-center text-2xl font-bold md:text-4xl lg:text-5xl">
+          <h2 class="text-center text-3xl font-bold md:text-4xl lg:text-5xl">
             Hong-min Jun
           </h2>
           <p
-            class="text-lg md:text-2xl lg:text-3xl text-gray-800 mx-auto mt-12 text-center md:leading-relaxed"
+            class="text-lg md:text-xl lg:text-3xl text-gray-800 mx-auto mt-12 text-center md:leading-relaxed"
           >
             <span
               >Attorney for foreign born-individuals and small business
@@ -100,50 +103,58 @@
             >
           </p>
           <div class="flex justify-center mt-8">
-            <img src="images/about/image.jpeg" alt="about image" />
+            <img src="images/about/img.jpeg" alt="about image" />
           </div>
           <!-- Description -->
-          <p class="mt-8">
-            Attorney Hong-min Jun was born in South Korea and obtained his Juris
-            Doctors degree (J.D) in Indiana University School of Law in Indiana.
-            He also has Master degrees in comparative law (MCL) from Indiana
-            University School of Law and Graduate School of Kyung Hee University
-            in Seoul.
-            <br />
-            <br />
-            Attorney Jun is admitted to practice law in the States of Illinois
-            and Indiana. He is practicing almost every aspect of the immigration
-            law since 2005. As he himself has been through the US immigration
-            process to become a lawful permanent resident, he fully understands
-            clients’ needs and their dreams and goals they want to achieve in
-            the United States.
-            <br />
-            <br />
-            Attorney Jun has served many groups of immigrants, foreign nationals
-            for their various needs and goals to name a few: investors,
-            students, families, employers/companies/churches and
-            employees/workers. Especially he has volunteered his times,
-            knowledge and experience as an attorney for many foreign student
-            groups across Midwest including Korean Student Associations for
-            University of Illinois at Urbana Champaign (UIUC), Ohio State
-            University (OSU), University of Wisconsin, Cincinnati University,
-            Indiana University at Bloomington (IUB), Purdue University and
-            University of Kentucky (UK). Also, he has served as a director of
-            Relations for Korean Scientists and Engineers of Indiana Chapter
-            (KSEA- Indiana) and a mentor for K Movement of Korean Trading Agency
-            in New York (KOTRA).
-            <br />
-            <br />
-            Attorney Jun has held numerous times of seminars at various venues
-            in response to the requests from the groups. Those seminars focus on
-            change of immigration laws and regulations, explanation about
-            immigration options in general and H1b, OPT, National Interest
-            Waiver (NIW), Marriage Green Cards, E2 and so on. However, his
-            interest in helping immigrants being informed is not limited to
-            immigration matters but also other areas of law including personal
-            affairs such as Wills and Trusts, Divorce and Lease Agreement, DUI
-            and car accident.
-          </p>
+          <div class="mt-8 space-y-8">
+            <p>
+              Attorney Hong-min Jun was born in South Korea and obtained his
+              Juris Doctors degree (J.D) in Indiana University School of Law in
+              Indiana. He also has Master degrees in comparative law (MCL) from
+              Indiana University School of Law and Graduate School of Kyung Hee
+              University in Seoul.
+            </p>
+            <p>
+              Attorney Jun is admitted to practice law in the States of Illinois
+              and Indiana. He is practicing almost every aspect of the
+              immigration law since 2005. As he himself has been through the US
+              immigration process to become a lawful permanent resident, he
+              fully understands clients’ needs and their dreams and goals they
+              want to achieve in the United States.
+            </p>
+            <div class="flex justify-center">
+              <img src="images/about/img-2.jpg" alt="about image" />
+            </div>
+            <p>
+              Attorney Jun has served many groups of immigrants, foreign
+              nationals for their various needs and goals to name a few:
+              investors, students, families, employers/companies/churches and
+              employees/workers. Especially he has volunteered his times,
+              knowledge and experience as an attorney for many foreign student
+              groups across Midwest including Korean Student Associations for
+              University of Illinois at Urbana Champaign (UIUC), Ohio State
+              University (OSU), University of Wisconsin, Cincinnati University,
+              Indiana University at Bloomington (IUB), Purdue University and
+              University of Kentucky (UK). Also, he has served as a director of
+              Relations for Korean Scientists and Engineers of Indiana Chapter
+              (KSEA- Indiana) and a mentor for K Movement of Korean Trading
+              Agency in New York (KOTRA).
+            </p>
+            <div class="flex justify-center">
+              <img src="images/about/img-3.jpg" alt="about image" />
+            </div>
+            <p>
+              Attorney Jun has held numerous times of seminars at various venues
+              in response to the requests from the groups. Those seminars focus
+              on change of immigration laws and regulations, explanation about
+              immigration options in general and H1b, OPT, National Interest
+              Waiver (NIW), Marriage Green Cards, E2 and so on. However, his
+              interest in helping immigrants being informed is not limited to
+              immigration matters but also other areas of law including personal
+              affairs such as Wills and Trusts, Divorce and Lease Agreement, DUI
+              and car accident.
+            </p>
+          </div>
           <div class="mt-8">
             <strong>Qualification</strong>
             <ul class="list-disc ml-4 leading-relaxed">
