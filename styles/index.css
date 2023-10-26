@@ -127,6 +127,10 @@
   transition: all 0.4s;
 }
 
+.test {
+  max-width: 1920px;
+}
+
 a {
   text-decoration: none;
 }

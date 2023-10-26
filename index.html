@@ -75,31 +75,96 @@
           </li>
         </ul>
       </nav>
-      <!-- Hero -->
-      <section class="relative pt-10 pb-4">
-        <img src="images/hero.jpeg" alt="hero image" class="bg-overlay" />
-        <!-- Main landing -->
-        <div
-          class="flex justify-center items-center mt-6 py-12 md:py-20 lg:py-36 lg:gap-x-24 xl:max-w-screen-2xl xl:mx-auto xl:py-40 2xl:py-60"
-        >
-          <div class="px-4">
-            <!-- Text Container-->
-            <div class="w-full text-white tracking-wide">
-              <h1
-                class="font-bold text-4xl leading-relaxed md:leading-normal md:text-5xl lg:text-6xl xl:text-7xl pb-4"
+      <section>
+        <!-- Hero slide container-->
+        <div class="swiper-hero overflow-hidden relative">
+          <div class="swiper-wrapper flex items-center">
+            <!-- Hero slide -->
+            <div class="swiper-slide py-4">
+              <img src="images/hero.jpeg" alt="hero image" class="bg-overlay" />
+              <div
+                class="flex justify-center items-center mt-6 py-12 md:py-20 lg:py-36 lg:gap-x-24 xl:max-w-screen-2xl xl:mx-auto xl:py-40 2xl:py-60"
               >
-                Meet Your
-                <br class="md:hidden" />
-                <span class="text-color-primary">Experienced</span>
-                Attorney
-              </h1>
-              <p
-                class="mt-4 mb-8 tracking-normal md:text-lg lg:mt-8 lg:text-3xl lg:w-full"
+                <div class="px-4">
+                  <div class="w-full text-black tracking-wide">
+                    <h1
+                      class="font-bold text-white text-4xl leading-relaxed md:leading-normal md:text-5xl lg:text-6xl xl:text-7xl pb-4"
+                    >
+                      Meet Your
+                      <br class="md:hidden" />
+                      <span class="text-color-primary">Experienced</span>
+                      Attorney
+                    </h1>
+                    <p
+                      class="text-gray-100 mt-4 mb-8 tracking-normal md:text-lg lg:mt-8 lg:text-3xl lg:w-full"
+                    >
+                      For foreign born-individuals and small business owners.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Hero slide -->
+            <div class="swiper-slide py-4">
+              <img
+                src="images/hero-2.jpeg"
+                alt="hero image"
+                class="bg-overlay"
+              />
+              <div
+                class="flex justify-center items-center mt-6 py-12 md:py-20 lg:py-36 lg:gap-x-24 xl:max-w-screen-2xl xl:mx-auto xl:py-40 2xl:py-60"
               >
-                For foreign born-individuals and small business owners.
-              </p>
+                <div class="px-4">
+                  <div class="w-full text-black tracking-wide">
+                    <h1
+                      class="font-bold text-white text-4xl leading-relaxed md:leading-normal md:text-5xl lg:text-6xl xl:text-7xl pb-4"
+                    >
+                      Meet Your
+                      <br class="md:hidden" />
+                      <span class="text-color-primary">Experienced</span>
+                      Attorney
+                    </h1>
+                    <p
+                      class="text-gray-100 mt-4 mb-8 tracking-normal md:text-lg lg:mt-8 lg:text-3xl lg:w-full"
+                    >
+                      For foreign born-individuals and small business owners.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Hero slide -->
+            <div class="swiper-slide py-4">
+              <img
+                src="images/hero-3.jpeg"
+                alt="hero image"
+                class="bg-overlay"
+              />
+              <div
+                class="flex justify-center items-center mt-6 py-12 md:py-20 lg:py-36 lg:gap-x-24 xl:max-w-screen-2xl xl:mx-auto xl:py-40 2xl:py-60"
+              >
+                <div class="px-4">
+                  <div class="w-full text-black tracking-wide">
+                    <h1
+                      class="font-bold text-white text-4xl leading-relaxed md:leading-normal md:text-5xl lg:text-6xl xl:text-7xl pb-4"
+                    >
+                      Meet Your
+                      <br class="md:hidden" />
+                      <span class="text-color-primary">Experienced</span>
+                      Attorney
+                    </h1>
+                    <p
+                      class="text-gray-100 mt-4 mb-8 tracking-normal md:text-lg lg:mt-8 lg:text-3xl lg:w-full"
+                    >
+                      For foreign born-individuals and small business owners.
+                    </p>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
+          <div class="absolute swiper-pagination mb-4"></div>
         </div>
       </section>
 
@@ -443,8 +508,14 @@
           alt="Testimonials image"
           class="bg-overlay-dark"
         />
+        <!-- Heading and description -->
+        <h2
+          class="text-center text-3xl font-bold pt-8 pb-8 text-white md:text-4xl lg:text-5xl"
+        >
+          Testimonials
+        </h2>
         <!-- Testimonial slides container -->
-        <div class="swiper-container">
+        <div class="swiper-testimonial">
           <div class="swiper-wrapper flex items-center">
             <!-- Testimonial 1 -->
             <div class="swiper-slide">
@@ -452,7 +523,7 @@
                 class="max-w-screen-md p-6 shadow-md mx-auto rounded-md flex flex-col justify-center md:text-lg"
               >
                 <p
-                  class="text-white leading-relaxed max-w-none lg:leading-loose"
+                  class="text-gray-100 leading-relaxed max-w-none lg:leading-loose"
                 >
                   Attorney Jun does a good job in his work. He is very
                   experienced and diligent in his practice. He and his team
@@ -462,7 +533,7 @@
                   speakers. I recommend this law office if you are seeking
                   immigration law or family law services.
                 </p>
-                <h4 class="mt-4 text-sm font-semibold text-white text-right">
+                <h4 class="mt-4 text-sm font-semibold text-gray-100 text-right">
                   Chen C.
                 </h4>
               </div>
@@ -473,7 +544,7 @@
                 class="max-w-screen-md p-6 shadow-md mx-auto rounded-md flex flex-col justify-center md:text-lg"
               >
                 <p
-                  class="text-white leading-relaxed max-w-none lg:leading-loose"
+                  class="text-gray-100 leading-relaxed max-w-none lg:leading-loose"
                 >
                   Law office of Hongmin Jun helped us on our Immigration
                   interview, he was brilliant and on point, professional. If you
@@ -481,7 +552,7 @@
                   to contact Mr. Hongmin he will fight for you to get your
                   Naturalization promptly.
                 </p>
-                <h4 class="mt-4 text-sm font-semibold text-white text-right">
+                <h4 class="mt-4 text-sm font-semibold text-gray-100 text-right">
                   Nicholas F.
                 </h4>
               </div>
@@ -492,7 +563,7 @@
                 class="max-w-screen-md p-6 shadow-md mx-auto rounded-md flex flex-col justify-center md:text-lg"
               >
                 <p
-                  class="text-white leading-relaxed max-w-none lg:leading-loose"
+                  class="text-gray-100 leading-relaxed max-w-none lg:leading-loose"
                 >
                   We applied for i-485 through marriage during college before
                   COVID-19 and he stayed in contact and helped us when the
@@ -501,7 +572,7 @@
                   immigration. Thank you for representing us and taking a huge
                   burden off of us!
                 </p>
-                <h4 class="mt-4 text-sm font-semibold text-white text-right">
+                <h4 class="mt-4 text-sm font-semibold text-gray-100 text-right">
                   Khalid S.
                 </h4>
               </div>
@@ -512,13 +583,13 @@
                 class="max-w-screen-md p-6 shadow-md mx-auto rounded-md flex flex-col justify-center md:text-lg"
               >
                 <p
-                  class="text-white leading-relaxed max-w-none lg:leading-loose"
+                  class="text-gray-100 leading-relaxed max-w-none lg:leading-loose"
                 >
                   Attorney Jun provides very valuable legal advises for
                   international students during the workshop session. He is
                   experienced in immigration area and he cares about us!
                 </p>
-                <h4 class="mt-4 text-sm font-semibold text-white text-right">
+                <h4 class="mt-4 text-sm font-semibold text-gray-100 text-right">
                   A. N.
                 </h4>
               </div>
@@ -529,14 +600,14 @@
                 class="max-w-screen-md p-6 shadow-md mx-auto rounded-md flex flex-col justify-center md:text-lg"
               >
                 <p
-                  class="text-white leading-relaxed max-w-none lg:leading-loose"
+                  class="text-gray-100 leading-relaxed max-w-none lg:leading-loose"
                 >
                   My husband and went to visit attorney Hong min Jun for more
                   information about immigration and let me tell everyone who is
                   looking for an attorney, he very nice, answers all your
                   questions, and most important HONEST and LOYAL.
                 </p>
-                <h4 class="mt-4 text-sm font-semibold text-white text-right">
+                <h4 class="mt-4 text-sm font-semibold text-gray-100 text-right">
                   J. C.
                 </h4>
               </div>
@@ -547,7 +618,7 @@
                 class="max-w-screen-md p-6 shadow-md mx-auto rounded-md flex flex-col justify-center md:text-lg"
               >
                 <p
-                  class="text-white leading-relaxed max-w-none lg:leading-loose"
+                  class="text-gray-100 leading-relaxed max-w-none lg:leading-loose"
                 >
                   We learned about The Hongmin firm through our office and they
                   were wonderful. Not only did they help us find the best
@@ -555,7 +626,7 @@
                   helping us to achieve the results. Thank you all at The
                   Hongmin!
                 </p>
-                <h4 class="mt-4 text-sm font-semibold text-white text-right">
+                <h4 class="mt-4 text-sm font-semibold text-gray-100 text-right">
                   Christiano L.
                 </h4>
               </div>
@@ -566,13 +637,13 @@
                 class="max-w-screen-md p-6 shadow-md mx-auto rounded-md flex flex-col justify-center md:text-lg"
               >
                 <p
-                  class="text-white leading-relaxed max-w-none lg:leading-loose"
+                  class="text-gray-100 leading-relaxed max-w-none lg:leading-loose"
                 >
                   Attorney Jun is an excellent attorney who helped me
                   tremendously with my case and kept me informed every step of
                   the way. I highly recommend him to anyone!
                 </p>
-                <h4 class="mt-4 text-sm font-semibold text-white text-right">
+                <h4 class="mt-4 text-sm font-semibold text-gray-100 text-right">
                   Drew M.
                 </h4>
               </div>
@@ -583,13 +654,13 @@
                 class="max-w-screen-md p-6 shadow-md mx-auto rounded-md flex flex-col justify-center md:text-lg"
               >
                 <p
-                  class="text-white leading-relaxed max-w-none lg:leading-loose"
+                  class="text-gray-100 leading-relaxed max-w-none lg:leading-loose"
                 >
                   Attorney Jun is an immigration expert, he used his wealth of
                   experience to breakdown my issue without a consultation or any
                   other form charges, his team is ready and willing to help.
                 </p>
-                <h4 class="mt-4 text-sm font-semibold text-white text-right">
+                <h4 class="mt-4 text-sm font-semibold text-gray-100 text-right">
                   H. G.
                 </h4>
               </div>

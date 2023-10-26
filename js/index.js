@@ -1,4 +1,4 @@
-const swiper = new Swiper('.swiper-container', {
+const swiperHero = new Swiper('.swiper-hero', {
   // Swiper configuration options
   slidesPerView: 1, // Number of slides per view
   spaceBetween: 10, // Space between slides
@@ -7,9 +7,21 @@ const swiper = new Swiper('.swiper-container', {
     el: '.swiper-pagination', // Pagination element
     clickable: true, // Allow clickable pagination bullets
   },
-  navigation: {
-    nextEl: '.swiper-button-next', // Next slide button
-    prevEl: '.swiper-button-prev', // Previous slide button
+  effect: 'coverflow',
+  autoplay: {
+    delay: 5000,
+    pauseOnMouseEnter: true,
+  },
+})
+
+const swiperTestimonial = new Swiper('.swiper-testimonial', {
+  // Swiper configuration options
+  slidesPerView: 1, // Number of slides per view
+  spaceBetween: 10, // Space between slides
+  loop: true, // Loop through slides
+  pagination: {
+    el: '.swiper-pagination', // Pagination element
+    clickable: true, // Allow clickable pagination bullets
   },
   autoplay: {
     delay: 5000,
@@ -40,6 +52,8 @@ navOverlay.addEventListener('click', () => {
   toggleNavbar()
 })
 
-contactMenu.addEventListener('click', () => {
-  toggleNavbar()
-})
+if (contactMenu !== null) {
+  contactMenu.addEventListener('click', () => {
+    toggleNavbar()
+  })
+}
