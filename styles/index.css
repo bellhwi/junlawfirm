@@ -15,8 +15,13 @@
   --text-color-primary: #d2b83e;
 }
 
+/* Utilities */
 .ratio-1 {
   aspect-ratio: 1;
+}
+
+.list-lower-alpha {
+  list-style-type: lower-alpha;
 }
 
 .bg-color-white {
