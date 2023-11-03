@@ -25,17 +25,13 @@
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
     <link rel="manifest" href="/site.webmanifest" />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
-    />
 
-    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
 
   <body>
     <main>
+      <!-- Navbar -->
       <nav
         class="container mx-auto flex items-center justify-center lg:justify-between py-2 px-4"
       >
@@ -50,25 +46,48 @@
         <!-- Logo -->
         <div class="logo mx-auto lg:mx-0">
           <a href="../index.html">
-            <img class="w-full" alt="logo" src="../images/logo.jpg" />
+            <img class="w-5/6" alt="logo" src="../images/logo.jpg" />
           </a>
         </div>
         <!-- Nav list -->
         <ul
           id="nav-list"
-          class="nav fixed left-0 top-0 h-full w-36 p-8 bg-color-primary text-white z-20 text-sm font-semibold space-y-4 lg:w-auto lg:bg-white lg:relative lg:p-0 lg:text-black lg:flex lg:items-center lg:space-y-0 lg:space-x-7 lg:translate-x-0"
+          class="nav fixed left-0 top-0 h-full w-36 bg-gray-100 text-gray-800 z-20 text-sm font-semibold space-y-4 tracking-wide lg:w-auto lg:bg-white lg:relative lg:flex lg:items-center lg:space-y-0 lg:space-x-4 lg:translate-x-0"
         >
-          <li><a href="../index.html" class="uppercase">home</a></li>
-          <li><a href="../about.html" class="uppercase">about</a></li>
-          <li><a href="../practice.html" class="uppercase">practice</a></li>
-          <li><a href="../blog.html#blog" class="uppercase">blog</a></li>
-          <li><a href="../index.html#contact" class="uppercase">contact</a></li>
+          <li class="pl-4 pt-8 lg:pl-0 lg:pt-0">
+            <a href="../index.html" class="uppercase text-gray-400">home</a>
+          </li>
+          <hr class="border-gray-300" />
+          <li class="pl-4 lg:pl-0">
+            <a href="../about.html" class="uppercase text-gray-400">about</a>
+          </li>
+          <hr class="border-gray-300" />
+
+          <li class="pl-4 lg:pl-0">
+            <a href="../practice.html" class="uppercase text-gray-400"
+              >practice</a
+            >
+          </li>
+
+          <hr class="border-gray-300" />
+          <li class="pl-4 lg:pl-0">
+            <a href="../blog.html" class="uppercase font-bold">blog</a>
+          </li>
+          <hr class="border-gray-300" />
+          <li class="pl-4 lg:pl-0">
+            <a
+              href="../index.html#contact"
+              id="contact-menu"
+              class="uppercase text-gray-400"
+              >contact</a
+            >
+          </li>
           <li class="lg:hidden">
             <div
               id="nav-close"
-              class="nav-close w-8 h-8 rounded-full border border-white flex items-center justify-center mx-auto mt-8 cursor-pointer"
+              class="nav-close w-8 h-8 rounded-full border border-gray-800 flex items-center justify-center mx-auto mt-12 cursor-pointer"
             >
-              <i class="fa-solid fa-x"></i>
+              <i class="fa-solid fa-x text-gray-800"></i>
             </div>
           </li>
         </ul>
@@ -284,7 +303,7 @@
           </ul>
         </div>
         <!-- Headings and text container -->
-        <div class="w-9/12 text-left px-12">
+        <div class="text-left px-4 w-full lg:w-9/12 lg:px-12">
           <!-- Heading -->
           <h2 class="text-3xl font-bold md:text-4xl lg:text-5xl">
             Residence Abroad Requirement for F1 and M1 visa application

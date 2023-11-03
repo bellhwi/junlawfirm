@@ -24,17 +24,14 @@
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
     <link rel="manifest" href="/site.webmanifest" />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
-    />
 
-    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
 
   <body>
     <main>
+      <!-- Navbar -->
+      <!-- Navbar -->
       <nav
         class="container mx-auto flex items-center justify-center lg:justify-between py-2 px-4"
       >
@@ -49,25 +46,46 @@
         <!-- Logo -->
         <div class="logo mx-auto lg:mx-0">
           <a href="index.html">
-            <img class="w-full" alt="logo" src="images/logo.jpg" />
+            <img class="w-5/6" alt="logo" src="images/logo.jpg" />
           </a>
         </div>
         <!-- Nav list -->
         <ul
           id="nav-list"
-          class="nav fixed left-0 top-0 h-full w-36 p-8 bg-color-primary text-white z-20 text-sm font-semibold space-y-4 lg:w-auto lg:bg-white lg:relative lg:p-0 lg:text-black lg:flex lg:items-center lg:space-y-0 lg:space-x-7 lg:translate-x-0"
+          class="nav fixed left-0 top-0 h-full w-36 bg-gray-100 text-gray-800 z-20 text-sm font-semibold space-y-4 tracking-wide lg:w-auto lg:bg-white lg:relative lg:flex lg:items-center lg:space-y-0 lg:space-x-4 lg:translate-x-0"
         >
-          <li><a href="index.html" class="uppercase">home</a></li>
-          <li><a href="about.html" class="uppercase">about</a></li>
-          <li><a href="practice.html" class="uppercase">practice</a></li>
-          <li><a href="blog.html" class="uppercase">blog</a></li>
-          <li><a href="#contact.html" class="uppercase">contact</a></li>
+          <li class="pl-4 pt-8 lg:pl-0 lg:pt-0">
+            <a href="index.html" class="text-gray-400 uppercase">home</a>
+          </li>
+          <hr class="border-gray-300" />
+          <li class="pl-4 lg:pl-0">
+            <a href="about.html" class="uppercase text-gray-400">about</a>
+          </li>
+          <hr class="border-gray-300" />
+
+          <li class="pl-4 lg:pl-0">
+            <a href="practice.html" class="uppercase text-gray-400">practice</a>
+          </li>
+
+          <hr class="border-gray-300" />
+          <li class="pl-4 lg:pl-0">
+            <a href="blog.html" class="uppercase font-bold">blog</a>
+          </li>
+          <hr class="border-gray-300" />
+          <li class="pl-4 lg:pl-0">
+            <a
+              href="index.html#contact"
+              id="contact-menu"
+              class="uppercase text-gray-400"
+              >contact</a
+            >
+          </li>
           <li class="lg:hidden">
             <div
               id="nav-close"
-              class="nav-close w-8 h-8 rounded-full border border-white flex items-center justify-center mx-auto mt-8 cursor-pointer"
+              class="nav-close w-8 h-8 rounded-full border border-gray-800 flex items-center justify-center mx-auto mt-12 cursor-pointer"
             >
-              <i class="fa-solid fa-x"></i>
+              <i class="fa-solid fa-x text-gray-800"></i>
             </div>
           </li>
         </ul>
@@ -105,14 +123,14 @@
             <a
               href="blogs/self-petition-for-l-1-visa-of-sole-proprietorship.html#blog-container"
               referrerpolicy="nofollow noopener"
+              class="max-w-sm mx-auto"
             >
-              <div
-                class="max-w-sm mx-auto rounded h-full overflow-hidden shadow-lg bg-white"
-              >
+              <div class="rounded h-full overflow-hidden shadow-lg bg-white">
                 <img
                   src="images/blog-thumbnails/thumbnail-21.jpeg"
-                  alt="Blog Post Image 1"
-                  class="w-full"
+                  alt="Blog
+                Post Image 1"
+                  class="w-full blog-thumbnail"
                 />
                 <div class="px-6 py-4">
                   <h3 class="font-bold text-xl mb-2">
@@ -132,14 +150,15 @@
             <a
               href="blogs/l-1-visa-us-intra-company-transferee-visa.html#blog-container"
               referrerpolicy="nofollow noopener"
+              class="max-w-sm mx-auto"
+              class="max-w-sm mx-auto"
             >
-              <div
-                class="max-w-sm mx-auto rounded h-full overflow-hidden shadow-lg bg-white"
-              >
+              <div class="rounded h-full overflow-hidden shadow-lg bg-white">
                 <img
                   src="images/blog-thumbnails/thumbnail-1.jpeg"
-                  alt="Blog Post Image 1"
-                  class="w-full"
+                  alt="Blog
+                Post Image 1"
+                  class="w-full blog-thumbnail"
                 />
                 <div class="px-6 py-4">
                   <h3 class="font-bold text-xl mb-2">
@@ -159,14 +178,14 @@
             <a
               href="blogs/waiver-of-inadmissibility-extreme-hardship-standards.html#blog-container"
               referrerpolicy="nofollow noopener"
+              class="max-w-sm mx-auto"
             >
-              <div
-                class="max-w-sm mx-auto rounded h-full overflow-hidden shadow-lg bg-white"
-              >
+              <div class="rounded h-full overflow-hidden shadow-lg bg-white">
                 <img
                   src="images/blog-thumbnails/thumbnail-2.jpeg"
-                  alt="Blog Post Image"
-                  class="w-full"
+                  alt="Blog
+                Post Image"
+                  class="w-full blog-thumbnail"
                 />
                 <div class="px-6 py-4 grow">
                   <h3 class="font-bold text-xl mb-2">
@@ -185,14 +204,14 @@
             <a
               href="blogs/importance-of-have-a-will-prepared-from-an-immigrant-s-perspective.html#blog-container"
               referrerpolicy="nofollow noopener"
+              class="max-w-sm mx-auto"
             >
-              <div
-                class="max-w-sm mx-auto rounded h-full overflow-hidden shadow-lg bg-white"
-              >
+              <div class="rounded h-full overflow-hidden shadow-lg bg-white">
                 <img
                   src="images/blog-thumbnails/thumbnail-3.jpeg"
-                  alt="Blog Post Image"
-                  class="w-full"
+                  alt="Blog
+                Post Image"
+                  class="w-full blog-thumbnail"
                 />
                 <div class="px-6 py-4">
                   <h3 class="font-bold text-xl mb-2">
@@ -212,14 +231,14 @@
             <a
               href="blogs/employment-based-green-card-priority-date-retrogression.html#blog-container"
               referrerpolicy="nofollow noopener"
+              class="max-w-sm mx-auto"
             >
-              <div
-                class="max-w-sm mx-auto rounded h-full overflow-hidden shadow-lg bg-white"
-              >
+              <div class="rounded h-full overflow-hidden shadow-lg bg-white">
                 <img
                   src="images/blog-thumbnails/thumbnail-4.jpeg"
-                  alt="Blog Post Image"
-                  class="w-full"
+                  alt="Blog
+                Post Image"
+                  class="w-full blog-thumbnail"
                 />
                 <div class="px-6 py-4">
                   <h3 class="font-bold text-xl mb-2">
@@ -238,14 +257,14 @@
             <a
               href="blogs/the-importance-of-time-frame-in-national-interest-waiver-applications.html#blog-container"
               referrerpolicy="nofollow noopener"
+              class="max-w-sm mx-auto"
             >
-              <div
-                class="max-w-sm mx-auto rounded h-full overflow-hidden shadow-lg bg-white"
-              >
+              <div class="rounded h-full overflow-hidden shadow-lg bg-white">
                 <img
                   src="images/blog-thumbnails/thumbnail-5.jpeg"
-                  alt="Blog Post Image"
-                  class="w-full"
+                  alt="Blog
+                Post Image"
+                  class="w-full blog-thumbnail"
                 />
                 <div class="px-6 py-4">
                   <h3 class="font-bold text-xl mb-2">
@@ -265,14 +284,14 @@
             <a
               href="blogs/update-on-ded-for-hong-kong-as-of-may-3-2023.html#blog-container"
               referrerpolicy="nofollow noopener"
+              class="max-w-sm mx-auto"
             >
-              <div
-                class="max-w-sm mx-auto rounded h-full overflow-hidden shadow-lg bg-white"
-              >
+              <div class="rounded h-full overflow-hidden shadow-lg bg-white">
                 <img
                   src="images/blog-thumbnails/thumbnail-6.jpeg"
-                  alt="Blog Post Image"
-                  class="w-full"
+                  alt="Blog
+                Post Image"
+                  class="w-full blog-thumbnail"
                 />
                 <div class="px-6 py-4">
                   <h3 class="font-bold text-xl mb-2">
@@ -292,14 +311,14 @@
             <a
               href="blogs/h-1-b-and-niw-application.html#blog-container"
               referrerpolicy="nofollow noopener"
+              class="max-w-sm mx-auto"
             >
-              <div
-                class="max-w-sm mx-auto rounded h-full overflow-hidden shadow-lg bg-white"
-              >
+              <div class="rounded h-full overflow-hidden shadow-lg bg-white">
                 <img
                   src="images/blog-thumbnails/thumbnail-7.jpeg"
-                  alt="Blog Post Image"
-                  class="w-full"
+                  alt="Blog
+                Post Image"
+                  class="w-full blog-thumbnail"
                 />
                 <div class="px-6 py-4">
                   <h3 class="font-bold text-xl mb-2">
@@ -320,14 +339,14 @@
             <a
               href="blogs/what-is-extreme-hardship-waiver.html#blog-container"
               referrerpolicy="nofollow noopener"
+              class="max-w-sm mx-auto"
             >
-              <div
-                class="max-w-sm mx-auto rounded h-full overflow-hidden shadow-lg bg-white"
-              >
+              <div class="rounded h-full overflow-hidden shadow-lg bg-white">
                 <img
                   src="images/blog-thumbnails/thumbnail-8.jpeg"
-                  alt="Blog Post Image"
-                  class="w-full"
+                  alt="Blog
+                Post Image"
+                  class="w-full blog-thumbnail"
                 />
                 <div class="px-6 py-4">
                   <h3 class="font-bold text-xl mb-2">
@@ -347,14 +366,14 @@
             <a
               href="blogs/list-of-tps-designated-countries-currently-open-to-registration-as-of-april-2023.html#blog-container"
               referrerpolicy="nofollow noopener"
+              class="max-w-sm mx-auto"
             >
-              <div
-                class="max-w-sm mx-auto rounded h-full overflow-hidden shadow-lg bg-white"
-              >
+              <div class="rounded h-full overflow-hidden shadow-lg bg-white">
                 <img
                   src="images/blog-thumbnails/thumbnail-9.jpeg"
-                  alt="Blog Post Image"
-                  class="w-full"
+                  alt="Blog
+                Post Image"
+                  class="w-full blog-thumbnail"
                 />
                 <div class="px-6 py-4">
                   <h3 class="font-bold text-xl mb-2">
@@ -374,14 +393,14 @@
             <a
               href="blogs/removal-of-60-days-rule-for-i-693-medical-examination-report.html#blog-container"
               referrerpolicy="nofollow noopener"
+              class="max-w-sm mx-auto"
             >
-              <div
-                class="max-w-sm mx-auto rounded h-full overflow-hidden shadow-lg bg-white"
-              >
+              <div class="rounded h-full overflow-hidden shadow-lg bg-white">
                 <img
                   src="images/blog-thumbnails/thumbnail-10.jpeg"
-                  alt="Blog Post Image"
-                  class="w-full"
+                  alt="Blog
+                Post Image"
+                  class="w-full blog-thumbnail"
                 />
                 <div class="px-6 py-4">
                   <h3 class="font-bold text-xl mb-2">
@@ -401,15 +420,11 @@
             <a
               href="blogs/temporary-increasing-of-ead-automatic-extension-for-540-days.html#blog-container"
               referrerpolicy="nofollow noopener"
+              class="max-w-sm mx-auto"
             >
-              <div
-                class="max-w-sm mx-auto rounded h-full overflow-hidden shadow-lg bg-white"
-              >
-                <img
-                  src="images/blog-thumbnails/thumbnail-11.jpg"
-                  alt="Blog Post Image"
-                  class="w-full"
-                />
+              <div class="rounded h-full overflow-hidden shadow-lg bg-white">
+                <img src="images/blog-thumbnails/thumbnail-11.jpg" alt="Blog
+                Post Image" class="w-full blog-thumbnail" blog-thumbnail" />
                 <div class="px-6 py-4">
                   <h3 class="font-bold text-xl mb-2">
                     Temporary Increasing of EAD automatic extension for 540 days
@@ -428,14 +443,14 @@
             <a
               href="blogs/retrogression-of-priority-dates.html#blog-container"
               referrerpolicy="nofollow noopener"
+              class="max-w-sm mx-auto"
             >
-              <div
-                class="max-w-sm mx-auto rounded h-full overflow-hidden shadow-lg bg-white"
-              >
+              <div class="rounded h-full overflow-hidden shadow-lg bg-white">
                 <img
                   src="images/blog-thumbnails/thumbnail-12.jpeg"
-                  alt="Blog Post Image"
-                  class="w-full"
+                  alt="Blog
+                Post Image"
+                  class="w-full blog-thumbnail"
                 />
                 <div class="px-6 py-4">
                   <h3 class="font-bold text-xl mb-2">
@@ -455,14 +470,14 @@
             <a
               href="blogs/parole-program-for-international-entrepreneur.html#blog-container"
               referrerpolicy="nofollow noopener"
+              class="max-w-sm mx-auto"
             >
-              <div
-                class="max-w-sm mx-auto rounded h-full overflow-hidden shadow-lg bg-white"
-              >
+              <div class="rounded h-full overflow-hidden shadow-lg bg-white">
                 <img
                   src="images/blog-thumbnails/thumbnail-13.jpeg"
-                  alt="Blog Post Image"
-                  class="w-full"
+                  alt="Blog
+                Post Image"
+                  class="w-full blog-thumbnail"
                 />
                 <div class="px-6 py-4">
                   <h3 class="font-bold text-xl mb-2">
@@ -482,14 +497,14 @@
             <a
               href="blogs/processes-for-cubans-haitians-nicaraguans-and-venezuelans.html#blog-container"
               referrerpolicy="nofollow noopener"
+              class="max-w-sm mx-auto"
             >
-              <div
-                class="max-w-sm mx-auto rounded h-full overflow-hidden shadow-lg bg-white"
-              >
+              <div class="rounded h-full overflow-hidden shadow-lg bg-white">
                 <img
                   src="images/blog-thumbnails/thumbnail-14.jpeg"
-                  alt="Blog Post Image"
-                  class="w-full"
+                  alt="Blog
+                Post Image"
+                  class="w-full blog-thumbnail"
                 />
                 <div class="px-6 py-4">
                   <h3 class="font-bold text-xl mb-2">
@@ -509,14 +524,14 @@
             <a
               href="blogs/residence-abroad-requirement-for-f-1-and-m-1-visa-application.html#blog-container"
               referrerpolicy="nofollow noopener"
+              class="max-w-sm mx-auto"
             >
-              <div
-                class="max-w-sm mx-auto rounded h-full overflow-hidden shadow-lg bg-white"
-              >
+              <div class="rounded h-full overflow-hidden shadow-lg bg-white">
                 <img
                   src="images/blog-thumbnails/thumbnail-15.jpeg"
-                  alt="Blog Post Image"
-                  class="w-full"
+                  alt="Blog
+                Post Image"
+                  class="w-full blog-thumbnail"
                 />
                 <div class="px-6 py-4">
                   <h3 class="font-bold text-xl mb-2">
@@ -536,14 +551,14 @@
             <a
               href="blogs/is-it-alright-to-receive-covid-19-benefits-in-terms-of-public-charge.html#blog-container"
               referrerpolicy="nofollow noopener"
+              class="max-w-sm mx-auto"
             >
-              <div
-                class="max-w-sm mx-auto rounded h-full overflow-hidden shadow-lg bg-white"
-              >
+              <div class="rounded h-full overflow-hidden shadow-lg bg-white">
                 <img
                   src="images/blog-thumbnails/thumbnail-16.jpeg"
-                  alt="Blog Post Image"
-                  class="w-full"
+                  alt="Blog
+                Post Image"
+                  class="w-full blog-thumbnail"
                 />
                 <div class="px-6 py-4">
                   <h3 class="font-bold text-xl mb-2">
@@ -564,14 +579,14 @@
             <a
               href="blogs/what-is-good-and-bad-under-the-new-public-charge-rule.html#blog-container"
               referrerpolicy="nofollow noopener"
+              class="max-w-sm mx-auto"
             >
-              <div
-                class="max-w-sm mx-auto rounded h-full overflow-hidden shadow-lg bg-white"
-              >
+              <div class="rounded h-full overflow-hidden shadow-lg bg-white">
                 <img
                   src="images/blog-thumbnails/thumbnail-17.jpg"
-                  alt="Blog Post Image"
-                  class="w-full"
+                  alt="Blog
+                Post Image"
+                  class="w-full blog-thumbnail"
                 />
                 <div class="px-6 py-4">
                   <h3 class="font-bold text-xl mb-2">
@@ -592,14 +607,14 @@
             <a
               href="blogs/cdc-requirements-for-immigrant-medical-examinations.html#blog-container"
               referrerpolicy="nofollow noopener"
+              class="max-w-sm mx-auto"
             >
-              <div
-                class="max-w-sm mx-auto rounded h-full overflow-hidden shadow-lg bg-white"
-              >
+              <div class="rounded h-full overflow-hidden shadow-lg bg-white">
                 <img
                   src="images/blog-thumbnails/thumbnail-18.jpeg"
-                  alt="Blog Post Image"
-                  class="w-full"
+                  alt="Blog
+                Post Image"
+                  class="w-full blog-thumbnail"
                 />
                 <div class="px-6 py-4">
                   <h3 class="font-bold text-xl mb-2">
@@ -619,14 +634,14 @@
             <a
               href="blogs/categories-allowed-for-automatic-extension-of-180-days-for-ead.html#blog-container"
               referrerpolicy="nofollow noopener"
+              class="max-w-sm mx-auto"
             >
-              <div
-                class="max-w-sm mx-auto rounded h-full overflow-hidden shadow-lg bg-white"
-              >
+              <div class="rounded h-full overflow-hidden shadow-lg bg-white">
                 <img
                   src="images/blog-thumbnails/thumbnail-19.jpeg"
-                  alt="Blog Post Image"
-                  class="w-full"
+                  alt="Blog
+                Post Image"
+                  class="w-full blog-thumbnail"
                 />
                 <div class="px-6 py-4">
                   <h3 class="font-bold text-xl mb-2">
@@ -647,14 +662,14 @@
             <a
               href="blogs/don-t-want-to-deal-with-perm-let-s-talk-about-niw-green-card.html#blog-container"
               referrerpolicy="nofollow noopener"
+              class="max-w-sm mx-auto"
             >
-              <div
-                class="max-w-sm mx-auto rounded h-full overflow-hidden shadow-lg bg-white"
-              >
+              <div class="rounded h-full overflow-hidden shadow-lg bg-white">
                 <img
                   src="images/blog-thumbnails/thumbnail-20.jpeg"
-                  alt="Blog Post Image"
-                  class="w-full"
+                  alt="Blog
+                Post Image"
+                  class="w-full blog-thumbnail"
                 />
                 <div class="px-6 py-4">
                   <h3 class="font-bold text-xl mb-2">
@@ -681,11 +696,35 @@
       class="relative flex flex-col items-center justify-between px-4 pt-8 bg-footer text-white"
     >
       <!-- Social Links & Copyright-->
-      <div
-        class="flex flex-col items-center text-xs mb-4 text-gray-300 lg:mb-6"
-      >
+      <div class="flex flex-col items-center mb-4 text-gray-400 lg:mb-6">
+        <ul class="flex space-x-5 mb-8 mt-4 text-sm lg:text-base lg:space-x-8">
+          <li>
+            <a href="index.html" class="font-semibold uppercase">home</a>
+          </li>
+          <li>
+            <a href="about.html" class="uppercase font-semibold">about</a>
+          </li>
+          <li>
+            <a href="practice.html" class="uppercase font-semibold">practice</a>
+          </li>
+          <li>
+            <a href="blog.html" class="uppercase font-bold text-gray-100"
+              >blog</a
+            >
+          </li>
+          <li>
+            <a
+              href="index.html#contact"
+              id="contact-menu"
+              class="uppercase font-semibold"
+              >contact</a
+            >
+          </li>
+        </ul>
         <!-- Social Links -->
-        <div class="flex justify-center items-center space-x-6 mt-2 mb-4">
+        <div
+          class="flex justify-center items-center space-x-6 mt-2 mb-4 text-xs"
+        >
           <a
             href="https://www.facebook.com/attorneyHongmin/"
             target="_blank"
@@ -712,11 +751,26 @@
           ></a>
         </div>
         <!-- Copyright -->
-        <div class="font-medium mb-1">
-          &copy; Law Office of Hong-min Jun. All Rights Reserved.
+        <div class="font-medium mb-1 text-xs lg:text-sm">
+          &copy; Law Office of Hong-min Jun x Powered by
+          <a
+            href="https://webtamin.co/"
+            target="_blank"
+            referrerpolicy="noopener nofollow"
+            class="powered-by"
+            >Webtamin</a
+          >
         </div>
+        <p></p>
       </div>
     </footer>
+    <!-- Go to Top -->
+    <div
+      class="top-btn fixed right-6 bottom-6 w-12 h-12 rounded-full bg-gray-300 text-white flex items-center justify-center cursor-pointer"
+      id="top-btn"
+    >
+      <i class="fa-solid fa-arrow-up text-gray-800 text-xl"></i>
+    </div>
 
     <script src="js/index.js"></script>
   </body>

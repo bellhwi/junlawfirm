@@ -6,34 +6,73 @@
 @layer components {
   /* added to tailwind.config.js */
   html {
-    scroll-behavior: smooth;
+    /* scroll-behavior: smooth; */
   }
 }
 
 :root {
-  --bg-color-primary: #09306d;
-  --text-color-primary: #d2b83e;
+  --bg-color-primary: #e47300;
+  /* --bg-color-secondary: #d95938; */
+  --bg-color-secondary: #f2e6cc;
+  --text-color-primary: #e47300;
+  --text-color-secondary: #f2e6cc;
 }
 
-/* Utilities */
-.ratio-1 {
-  aspect-ratio: 1;
+.blog-thumbnail {
+  aspect-ratio: 3/2;
+  object-fit: cover;
 }
 
 .list-lower-alpha {
   list-style-type: lower-alpha;
 }
 
-.bg-color-white {
-  background-color: white;
+.bg-color-secondary {
+  background-color: var(--bg-color-secondary);
 }
 
 .text-color-primary {
   color: var(--text-color-primary);
 }
+.text-color-secondary {
+  color: var(--text-color-secondary);
+}
 
 .bg-color-primary {
-  background-color: var(--bg-color-primary);
+  background-color: var(--bg-color-primary) !important;
+}
+
+.border-primary {
+  border-color: var(--bg-color-primary);
+}
+
+.bg-hero {
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -10;
+  height: 100%;
+  width: 100%;
+}
+
+.bg-hero-one {
+  background-image: url('../images/9.jpg');
+  /* background-position-y: 30%; */
+  /* filter: brightness(40%); */
+}
+
+.bg-hero-two {
+  background-image: url('../images/hero-2.jpg');
+}
+
+.bg-hero-three {
+  background-image: url('../images/hero-3.jpg');
+  background-position: bottom;
+  /* filter: brightness(40%); */
 }
 
 .bg-overlay {
@@ -62,16 +101,13 @@
   object-fit: cover;
 }
 
+.about-img {
+  aspect-ratio: 1;
+  object-fit: cover;
+}
+
 .bg-footer {
-  background-color: #05193b;
-}
-
-.color-accent {
-  color: #b3cdff;
-}
-
-.color-check {
-  color: #6b84b3;
+  background-color: #402a1d;
 }
 
 .btn-bg {
@@ -117,6 +153,15 @@
   z-index: 10;
 }
 
+.nav-dynamic {
+  transform: translateY(-6rem);
+  transition: all 0.4s;
+}
+
+.nav-dynamic.show {
+  transform: translateY(0);
+}
+
 .swiper-pagination-bullet {
   background-color: white !important;
 }
@@ -128,12 +173,7 @@
 }
 
 .practice-list a:hover {
-  text-decoration: underline;
-  transition: all 0.4s;
-}
-
-.test {
-  max-width: 1920px;
+  color: white;
 }
 
 a {
@@ -146,8 +186,23 @@ iframe {
   aspect-ratio: 1;
 }
 
+.top-btn {
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.4s;
+}
+
+.top-btn.show {
+  opacity: 1;
+  pointer-events: all;
+}
+
 .fa-brands:hover {
-  color: var(--text-color-primary);
+  color: var(--text-color-secondary);
+}
+
+.powered-by:hover {
+  color: var(--text-color-secondary);
 }
 
 @media (min-width: 768px) {

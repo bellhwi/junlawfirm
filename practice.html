@@ -25,17 +25,13 @@
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
     <link rel="manifest" href="/site.webmanifest" />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
-    />
 
-    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
 
   <body>
     <main>
+      <!-- Navbar -->
       <nav
         class="container mx-auto flex items-center justify-center lg:justify-between py-2 px-4"
       >
@@ -50,25 +46,46 @@
         <!-- Logo -->
         <div class="logo mx-auto lg:mx-0">
           <a href="index.html">
-            <img class="w-full" alt="logo" src="images/logo.jpg" />
+            <img class="w-5/6" alt="logo" src="images/logo.jpg" />
           </a>
         </div>
         <!-- Nav list -->
         <ul
           id="nav-list"
-          class="nav fixed left-0 top-0 h-full w-36 p-8 bg-color-primary text-white z-20 text-sm font-semibold space-y-4 lg:w-auto lg:bg-white lg:relative lg:p-0 lg:text-black lg:flex lg:items-center lg:space-y-0 lg:space-x-7 lg:translate-x-0"
+          class="nav fixed left-0 top-0 h-full w-36 bg-gray-100 text-gray-800 z-20 text-sm font-semibold space-y-4 tracking-wide lg:w-auto lg:bg-white lg:relative lg:flex lg:items-center lg:space-y-0 lg:space-x-4 lg:translate-x-0"
         >
-          <li><a href="index.html" class="uppercase">home</a></li>
-          <li><a href="about.html" class="uppercase">about</a></li>
-          <li><a href="practice.html" class="uppercase">practice</a></li>
-          <li><a href="blog.html" class="uppercase">blog</a></li>
-          <li><a href="#contact.html" class="uppercase">contact</a></li>
+          <li class="pl-4 pt-8 lg:pl-0 lg:pt-0">
+            <a href="index.html" class="text-gray-400 uppercase">home</a>
+          </li>
+          <hr class="border-gray-300" />
+          <li class="pl-4 lg:pl-0">
+            <a href="about.html" class="uppercase text-gray-400">about</a>
+          </li>
+          <hr class="border-gray-300" />
+
+          <li class="pl-4 lg:pl-0">
+            <a href="practice.html" class="uppercase font-bold">practice</a>
+          </li>
+
+          <hr class="border-gray-300" />
+          <li class="pl-4 lg:pl-0">
+            <a href="blog.html" class="uppercase text-gray-400">blog</a>
+          </li>
+          <hr class="border-gray-300" />
+          <li class="pl-4 lg:pl-0">
+            <a
+              href="index.html#contact"
+              id="contact-menu"
+              class="uppercase text-gray-400"
+              >contact</a
+            >
+          </li>
           <li class="lg:hidden">
             <div
               id="nav-close"
-              class="nav-close w-8 h-8 rounded-full border border-white flex items-center justify-center mx-auto mt-8 cursor-pointer"
+              class="nav-close w-8 h-8 rounded-full border border-gray-800 flex items-center justify-center mx-auto mt-12 cursor-pointer"
             >
-              <i class="fa-solid fa-x"></i>
+              <i class="fa-solid fa-x text-gray-800"></i>
             </div>
           </li>
         </ul>
@@ -92,14 +109,76 @@
       </section>
 
       <!-- Practice -->
-      <section class="pb-20 px-4">
+      <section class="pb-20 px-4" id="practice-main">
         <div class="container mx-auto">
           <div
-            class="grid grid-cols-1 gap-8 mt-16 mx-auto md:grid-cols-2 lg:grid-cols-4"
+            class="grid grid-cols-1 gap-8 mt-16 mx-auto items-center max-w-screen-sm lg:grid-cols-2 lg:max-w-screen-xl"
           >
-            <!-- Feature box 1-->
+            <!-- Feature box-->
             <div
-              class="relative flex justify-between flex-col mx-auto px-8 py-12 shadow-md w-full"
+              class="relative flex justify-center flex-col mx-auto px-4 py-12 shadow-md w-full h-full"
+            >
+              <img
+                src="images/practice/waiver.jpeg"
+                alt="image"
+                class="bg-overlay-dark rounded-sm"
+              />
+              <h2 class="text-2xl text-center font-bold mb-4 text-white">
+                National Interest Waiver(NIW)
+              </h2>
+              <ul class="text-gray-200 mt-8 leading-loose mx-auto space-y-2">
+                <li class="practice-list">
+                  <a
+                    href="practices/national-interest-waiver-niw/what-is-national-interest-waiver.html"
+                    referrerpolicy="noopener nofollow"
+                    >What is National Interest Waiver?
+                  </a>
+                </li>
+                <hr class="border-gray-400" />
+                <li class="practice-list">
+                  <a
+                    href="practices/national-interest-waiver-niw/self-petition.html"
+                    referrerpolicy="noopener nofollow"
+                    >Self Petition
+                  </a>
+                </li>
+                <hr class="border-gray-400" />
+                <li class="practice-list">
+                  <a
+                    href="practices/national-interest-waiver-niw/matter-of-dhanasar.html"
+                    referrerpolicy="noopener nofollow"
+                    >Matter of Dhanasar
+                  </a>
+                </li>
+                <hr class="border-gray-400" />
+                <li class="practice-list">
+                  <a
+                    href="practices/national-interest-waiver-niw/list-of-documents-that-are-needed-for-niw-application.html"
+                    referrerpolicy="noopener nofollow"
+                    >List of Documents that are needed for NIW application
+                  </a>
+                </li>
+                <hr class="border-gray-400" />
+                <li class="practice-list">
+                  <a
+                    href="practices/national-interest-waiver-niw/recommendation-letters.html"
+                    referrerpolicy="noopener nofollow"
+                    >Recommendation Letters
+                  </a>
+                </li>
+                <hr class="border-gray-400" />
+                <li class="practice-list">
+                  <a
+                    href="practices/national-interest-waiver-niw/testimonial.html"
+                    referrerpolicy="noopener nofollow"
+                    >Testimonial
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <!-- Feature box-->
+            <div
+              class="relative flex justify-center flex-col mx-auto px-4 py-12 shadow-md w-full h-full"
             >
               <img
                 src="images/practice/marriage.jpeg"
@@ -109,114 +188,75 @@
               <h2 class="text-2xl text-center font-bold mb-4 text-white">
                 Marriage Green Card
               </h2>
-              <ul class="list-disc text-gray-100 ml-8 mt-4 leading-loose">
+              <ul class="text-gray-200 mt-8 leading-loose mx-auto space-y-2">
                 <li class="practice-list">
                   <a
-                    href="practices/are-you-married-to-a-us-citizen.html"
+                    href="practices/marriage-green-card/who-can-be-a-sponsor-for-marriage-green-card.html"
                     referrerpolicy="noopener nofollow"
-                    >Married to a US citizen?</a
+                    >Who can be a Sponsor for Marriage Green Card</a
                   >
                 </li>
+                <hr class="border-gray-400" />
                 <li class="practice-list">
                   <a
-                    href="practices/adjustment-of-status.html"
+                    href="practices/marriage-green-card/adjustment-of-status.html"
                     referrerpolicy="noopener nofollow"
-                    >Adjustment of Status
-                  </a>
-                </li>
-                <li class="practice-list">
-                  <a
-                    href="practices/affidavit-of-support-i-864.html"
-                    referrerpolicy="noopener nofollow"
-                    >Affidavit of Support (I-864)</a
+                    >Adjustment of Status</a
                   >
                 </li>
+                <hr class="border-gray-400" />
                 <li class="practice-list">
                   <a
-                    href="practices/consular-processing.html"
+                    href="practices/marriage-green-card/consular-processing.html"
                     referrerpolicy="noopener nofollow"
-                    >Consular Processing
-                  </a>
-                </li>
-                <li class="practice-list">
-                  <a
-                    href="practices/k-1-visa-fiancé-visa.html"
-                    referrerpolicy="noopener nofollow"
-                    >K1 Visa: Fiancé Visa</a
+                    >Consular Processing</a
                   >
                 </li>
+                <hr class="border-gray-400" />
                 <li class="practice-list">
                   <a
-                    href="practices/same-sex-marriage.html"
+                    href="practices/marriage-green-card/criminal-records-and-adjustment-of-status.html"
                     referrerpolicy="noopener nofollow"
-                    >Same-Sex Marriage</a
+                    >Criminal Records and Adjustment of Status</a
                   >
                 </li>
+                <hr class="border-gray-400" />
                 <li class="practice-list">
                   <a
-                    href="practices/criminal-records-and-adjustment-of-status.html"
-                    referrerpolicy="noopener nofollow"
-                    >Criminal Records and Adjustment of Status
-                  </a>
-                </li>
-                <li class="practice-list">
-                  <a
-                    href="practices/marriage-while-you-are-in-removal-proceeding.html"
+                    href="practices/marriage-green-card/marriage-while-you-are-in-removal-proceeding.html"
                     referrerpolicy="noopener nofollow"
                     >Marriage while you are in Removal Proceeding</a
                   >
                 </li>
-              </ul>
-            </div>
-            <!-- Feature box 2-->
-            <div
-              class="relative flex justify-between flex-col mx-auto px-8 py-12 shadow-md w-full"
-            >
-              <img
-                src="images/practice/waiver.jpeg"
-                alt="image"
-                class="bg-overlay-dark rounded-sm"
-              />
-              <h2 class="text-2xl text-center font-bold mb-4 text-white">
-                National Interest Waiver
-              </h2>
-              <ul class="list-disc text-gray-100 ml-8 mt-4 leading-loose">
+                <hr class="border-gray-400" />
                 <li class="practice-list">
                   <a
-                    href="practices/what-is-national-interest-waiver.html"
+                    href="practices/marriage-green-card/same-sex-marriage.html"
                     referrerpolicy="noopener nofollow"
-                    >What Is National Interest Waiver?
-                  </a>
+                    >Same Sex Marriage</a
+                  >
                 </li>
+                <hr class="border-gray-400" />
                 <li class="practice-list">
                   <a
-                    href="practices/standards-of-niw-under-dhanasar.html"
+                    href="practices/marriage-green-card/waiver-of-inadmissibility.html"
                     referrerpolicy="noopener nofollow"
-                    >Standards Of NIW Under Dhanasar
-                  </a>
+                    >Waiver of Inadmissibility</a
+                  >
                 </li>
+                <hr class="border-gray-400" />
                 <li class="practice-list">
                   <a
-                    href="practices/documents-evidence.html"
+                    href="practices/marriage-green-card/k-visa-fiancé-visa.html"
                     referrerpolicy="noopener nofollow"
-                    >Documents / Evidence
-                  </a>
-                </li>
-                <li class="practice-list">
-                  <a href="practices/aao-decisions.html">AAO Decisions </a>
-                </li>
-                <li class="practice-list">
-                  <a
-                    href="practices/request-for-evaluation.html"
-                    referrerpolicy="noopener nofollow"
-                    >Request for Evaluation
-                  </a>
+                    >K Visa Fiance Visa</a
+                  >
                 </li>
               </ul>
             </div>
-            <!-- Feature box 3-->
+            <!-- Feature box -->
             <div
-              class="relative flex justify-between flex-col mx-auto px-8 py-12 shadow-md w-full"
+              class="relative flex justify-center flex-col mx-auto px-8 py-12 shadow-md w-full h-full"
             >
               <img
                 src="images/practice/investors.jpeg"
@@ -224,20 +264,50 @@
                 class="bg-overlay-dark rounded-sm"
               />
               <h2 class="text-2xl text-center font-bold mb-4 text-white">
-                International Investors
+                Treaty Investment (E2)
               </h2>
               <!-- Learn more button -->
               <div class="mx-auto mt-8">
                 <a
-                  href="practices/international-investors.html"
-                  class="uppercase text-sm border border-white p-4 rounded-sm text-white tracking-widest font-semibold"
+                  href="practices/treaty-investment-e-2/international-investors.html"
+                  class="uppercase text-sm border border-gray-200 p-4 rounded-sm text-gray-200 tracking-widest font-semibold"
                   >learn more</a
                 >
               </div>
             </div>
-            <!-- Feature box 4-->
+            <!-- Feature box -->
             <div
-              class="relative flex justify-between flex-col mx-auto px-8 py-12 shadow-md w-full"
+              class="relative flex justify-center flex-col mx-auto px-8 py-12 shadow-md w-full h-full"
+            >
+              <img
+                src="images/practice/asylum.jpg"
+                alt="image"
+                class="bg-overlay-dark rounded-sm"
+              />
+              <h2 class="text-2xl text-center font-bold mb-4 text-white">
+                Asylum Application and Defense of Deportation
+              </h2>
+              <ul class="text-gray-200 mt-8 leading-loose mx-auto space-y-2">
+                <li class="practice-list">
+                  <a
+                    href="practices/asylum-application-and-defense-of-deportation/asylum.html"
+                    referrerpolicy="noopener nofollow"
+                    >Asylum
+                  </a>
+                </li>
+                <hr class="border-gray-400" />
+                <li class="practice-list">
+                  <a
+                    href="practices/asylum-application-and-defense-of-deportation/defensive-asylum-vs-affensive-asylum.html"
+                    referrerpolicy="noopener nofollow"
+                    >Defensive Asylum vs. Affensive Asylum
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <!-- Feature box -->
+            <div
+              class="relative flex justify-center flex-col mx-auto px-8 py-12 shadow-md w-full h-full"
             >
               <img
                 src="images/practice/injury.jpeg"
@@ -250,29 +320,29 @@
               <!-- Learn more button -->
               <div class="mx-auto mt-8">
                 <a
-                  href="practices/personal-injury.html"
-                  class="uppercase text-sm border border-white p-4 rounded-sm text-white tracking-widest font-semibold"
+                  href="practices/personal-injury/personal-injury.html"
+                  class="uppercase text-sm border border-gray-200 p-4 rounded-sm text-gray-200 tracking-widest font-semibold"
                   >learn more</a
                 >
               </div>
             </div>
             <!-- Feature box 5-->
             <div
-              class="relative flex justify-between flex-col mx-auto px-8 py-12 shadow-md w-full"
+              class="relative flex justify-center flex-col mx-auto px-8 py-12 shadow-md w-full h-full"
             >
               <img
-                src="images/practice/notary.jpeg"
+                src="images/practice/will.jpg"
                 alt="image"
                 class="bg-overlay-dark rounded-sm"
               />
               <h2 class="text-2xl text-center font-bold mb-4 text-white">
-                Remote Notary Public
+                Wills and Trusts
               </h2>
               <!-- Learn more button -->
               <div class="mx-auto mt-8">
                 <a
-                  href="practices/remote-notary-public.html"
-                  class="uppercase text-sm border border-white p-4 rounded-sm text-white tracking-widest font-semibold"
+                  href="practices/wills-and-trusts/importance-of-having-a-will-prepared-from-an-immigrant-docx.html"
+                  class="uppercase text-sm border border-gray-200 p-4 rounded-sm text-gray-200 tracking-widest font-semibold"
                   >learn more</a
                 >
               </div>
@@ -287,11 +357,37 @@
       class="relative flex flex-col items-center justify-between px-4 pt-8 bg-footer text-white"
     >
       <!-- Social Links & Copyright-->
-      <div
-        class="flex flex-col items-center text-xs mb-4 text-gray-300 lg:mb-6"
-      >
+      <div class="flex flex-col items-center mb-4 text-gray-400 lg:mb-6">
+        <ul class="flex space-x-5 mb-8 mt-4 text-sm lg:text-base lg:space-x-8">
+          <li>
+            <a href="index.html" class="font-semibold uppercase">home</a>
+          </li>
+          <li>
+            <a href="about.html" class="uppercase font-semibold">about</a>
+          </li>
+          <li>
+            <a
+              href="practice.html"
+              class="uppercase font-semibold text-gray-100"
+              >practice</a
+            >
+          </li>
+          <li>
+            <a href="blog.html" class="uppercase font-semibold">blog</a>
+          </li>
+          <li>
+            <a
+              href="index.html#contact"
+              id="contact-menu"
+              class="uppercase font-semibold"
+              >contact</a
+            >
+          </li>
+        </ul>
         <!-- Social Links -->
-        <div class="flex justify-center items-center space-x-6 mt-2 mb-4">
+        <div
+          class="flex justify-center items-center space-x-6 mt-2 mb-4 text-xs"
+        >
           <a
             href="https://www.facebook.com/attorneyHongmin/"
             target="_blank"
@@ -318,9 +414,17 @@
           ></a>
         </div>
         <!-- Copyright -->
-        <div class="font-medium mb-1">
-          &copy; Law Office of Hong-min Jun. All Rights Reserved.
+        <div class="font-medium mb-1 text-xs lg:text-sm">
+          &copy; Law Office of Hong-min Jun x Powered by
+          <a
+            href="https://webtamin.co/"
+            target="_blank"
+            referrerpolicy="noopener nofollow"
+            class="powered-by"
+            >Webtamin</a
+          >
         </div>
+        <p></p>
       </div>
     </footer>
 
