@@ -34,7 +34,7 @@ function handleSideNavbar() {
 
   if (contactMenu !== null) {
     contactMenu.addEventListener('click', () => {
-      toggleSideNavbar()
+      navList.classList.toggle('show')
     })
   }
 }

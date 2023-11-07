@@ -30,7 +30,7 @@
   <body>
     <main>
       <nav
-        class="container mx-auto flex items-center justify-center lg:justify-between py-2 px-4"
+        class="py-2 px-8 container mx-auto flex items-center justify-center lg:justify-between lg:px-0"
       >
         <!-- Navbar on overlay in mobile screen -->
         <div class="nav-overlay hidden" id="nav-overlay"></div>
@@ -61,7 +61,9 @@
           <hr class="border-gray-300" />
 
           <li class="pl-4 lg:pl-0">
-            <a href="../../practice.html" class="uppercase font-bold"
+            <a
+              href="../../practices/national-interest-waiver-niw/what-is-national-interest-waiver.html"
+              class="uppercase font-bold"
               >practice</a
             >
           </li>
@@ -91,31 +93,34 @@
       </nav>
 
       <!-- Hero -->
-      <section class="relative pt-10 pb-4">
+      <section class="relative py-32 lg:py-48">
         <img
-          src="../../images/practice/marriage.jpeg"
+          src="../../images/practice/marriage.jpg"
           alt="hero image"
-          class="bg-overlay"
+          class="bg-overlay-original"
         />
         <!-- Main landing -->
-        <div class="container mx-auto py-24">
+        <div class="container mx-auto">
           <h1
-            class="text-white tracking-wide font-bold text-4xl pl-8 md:text-5xl xl:text-6xl"
+            class="text-white tracking-wide font-bold text-5xl px-8 lg:text-7xl"
           >
-            Marriage Green Card
+            Green Card<br />
+            Through <br />Marriage
           </h1>
         </div>
       </section>
 
       <!-- Practice -->
       <section
-        class="relative mx-auto flex py-20 rounded px-8 max-w-screen-2xl flex-col lg:flex-row lg:space-x-16"
+        class="relative mx-auto flex pt-16 pb-8 rounded px-8 max-w-screen-2xl flex-col lg:flex-row lg:space-x-16"
         id="practice-container"
       >
         <div
-          class="w-3/12 p-6 h-fit bg-gray-100 hidden lg:block 2xl:mr-16 2xl:w-4/12"
+          class="order-2 w-full p-6 h-fit bg-gray-100 mt-8 lg:mt-0 lg:w-3/12 lg:block lg:order-1 2xl:mr-16 2xl:w-4/12"
         >
-          <h3 class="text-3xl font-bold pb-8">Practice Areas</h3>
+          <h3 class="text-center text-3xl font-bold pb-8 lg:text-left">
+            Practice Areas
+          </h3>
           <p class="text-lg text-gray-800 font-semibold mb-4">
             National Interest Waiver
           </p>
@@ -159,14 +164,6 @@
                 href="../national-interest-waiver-niw/recommendation-letters.html#practice-container"
                 referrerpolicy="noopener nofollow"
                 >Recommendation Letters
-              </a>
-            </li>
-            <hr class="border-gray-300" />
-            <li>
-              <a
-                href="../national-interest-waiver-niw/testimonial.html#practice-container"
-                referrerpolicy="noopener nofollow"
-                >Testimonial
               </a>
             </li>
           </ul>
@@ -242,7 +239,7 @@
           </ul>
           <p class="text-lg text-gray-800 font-semibold mb-8">
             <a
-              href="../treaty-investment-e-2/international-investors.html#practice-container"
+              href="../treaty-investment-e-2/treaty-investment-e-2.html#practice-container"
               referrerpolicy="noopener nofollow"
               >Treaty Investment (E2)</a
             >
@@ -285,7 +282,7 @@
           </p>
         </div>
         <!-- Headings and text container -->
-        <div class="w-full lg:w-9/12">
+        <div class="order-1 w-full lg:w-9/12 lg:order-2">
           <!-- Heading -->
           <h2 class="text-3xl font-bold md:text-4xl lg:text-5xl">
             Marriage while you are in Removal Proceeding
@@ -359,57 +356,107 @@
               </div>
             </div>
           </div>
-          <!-- Read more button -->
-          <div class="flex justify-center mt-12">
-            <a
-              href="../../practice.html"
-              class="uppercase text-sm border border-black px-8 py-4 rounded-sm text-black tracking-widest font-semibold"
-              >read more</a
-            >
-          </div>
         </div>
       </section>
     </main>
 
     <!-- Footer -->
     <footer
-      class="relative flex flex-col items-center justify-between px-4 pt-8 bg-footer text-white"
+      class="relative flex flex-col items-center justify-between px-4 py-8 bg-white"
     >
       <!-- Social Links & Copyright-->
-      <div
-        class="flex flex-col items-center text-xs mb-4 text-gray-300 lg:mb-6"
-      >
+      <div class="flex flex-col items-center">
+        <ul class="flex space-x-5 text-sm lg:text-base lg:space-x-8">
+          <li>
+            <a
+              href="../../index.html"
+              class="font-semibold uppercase text-gray-500"
+              >home</a
+            >
+          </li>
+          <li>
+            <a
+              href="../../about.html"
+              class="uppercase font-semibold text-gray-500"
+              >about</a
+            >
+          </li>
+          <li>
+            <a
+              href="../../practices/national-interest-waiver-niw/what-is-national-interest-waiver.html"
+              class="uppercase font-bold"
+              >practice</a
+            >
+          </li>
+          <li>
+            <a
+              href="../../blog.html"
+              class="uppercase font-semibold text-gray-500"
+              >blog</a
+            >
+          </li>
+          <li>
+            <a
+              href="../../index.html#contact"
+              id="contact-menu"
+              class="uppercase font-semibold text-gray-500"
+              >contact</a
+            >
+          </li>
+        </ul>
         <!-- Social Links -->
-        <div class="flex justify-center items-center space-x-6 mt-2 mb-4">
+        <div
+          class="flex justify-center items-center space-x-6 my-4 text-xs text-gray-500"
+        >
           <a
             href="https://www.facebook.com/attorneyHongmin/"
             target="_blank"
             rel="noopener noreferrer"
-            ><i class="fa-brands fa-facebook fa-2x"></i
+            ><i class="fa-brands fa-facebook text-2xl"></i
           ></a>
           <a
             href="https://www.youtube.com/channel/UCTdlANUzhWd-q1nQWZrwe1A"
             target="_blank"
             rel="noopener noreferrer"
-            ><i class="fa-brands fa-youtube fa-2x"></i
+            ><i class="fa-brands fa-youtube text-2xl"></i
           ></a>
           <a
             href="https://podcasters.spotify.com/pod/show/hong-min-jun/episodes/2-3-e182h6q?%24web_only=true&_branch_match_id=1082700781583200787&utm_source=web&utm_campaign=web-share&utm_medium=sharing&_branch_referrer=H4sIAAAAAAAAA8soKSkottLXLy7IL8lMq0zMS87IL9ItT03SSywo0MvJzMvWT9X38s%2F0KQ8tDPEtTgIAUr4%2BxDAAAAA%3D"
             target="_blank"
             rel="noopener noreferrer"
-            ><i class="fa-brands fa-spotify fa-2x"></i
+            ><i class="fa-brands fa-spotify text-2xl"></i
           ></a>
           <a
             href="https://www.linkedin.com/in/hong-min-jun-74696b129/"
             target="_blank"
             rel="noopener noreferrer"
-            ><i class="fa-brands fa-linkedin-in fa-2x"></i
+            ><i class="fa-brands fa-linkedin-in text-2xl"></i
           ></a>
         </div>
         <!-- Copyright -->
-        <div class="font-medium mb-1">
-          &copy; Law Office of Hong-min Jun. All Rights Reserved.
+        <div class="font-medium text-xs text-gray-500 lg:text-sm">
+          &copy; Law Office of Hong-min Jun x Powered by
+          <a
+            href="https://webtamin.co/"
+            target="_blank"
+            referrerpolicy="noopener nofollow"
+            class="powered-by"
+            >Webtamin</a
+          >
         </div>
+        <ul class="flex space-x-2 text-xs mt-2 text-gray-500">
+          <li>
+            <a href="../../disclaimer.html" referrerpolicy="noopener nofollow"
+              >Disclaimer</a
+            >
+          </li>
+          <li>|</li>
+          <li>
+            <a href="../../sitemap.html" referrerpolicy="noopener nofollow"
+              >Sitemap</a
+            >
+          </li>
+        </ul>
       </div>
     </footer>
 

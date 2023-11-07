@@ -7,7 +7,7 @@
     <meta
       name="description"
       content="
-      Our firm serves a diverse client base with matters regarding Personal and Workplace Injuries, Immigration, and Business Representation.
+      Law Office of Hong-min Jun, is a law firm dedicated to providing strong legal representation for clients throughout the state of Indiana and Illinois.
       "
     />
     <title>About | Law Office of Hong-min Jun</title>
@@ -32,7 +32,7 @@
     <main>
       <!-- Navbar -->
       <nav
-        class="container mx-auto flex items-center justify-center lg:justify-between py-2 px-4"
+        class="container mx-auto flex items-center justify-center lg:justify-between py-2 px-8 lg:px-0"
       >
         <!-- Navbar on overlay in mobile screen -->
         <div class="nav-overlay hidden" id="nav-overlay"></div>
@@ -63,7 +63,11 @@
           <hr class="border-gray-300" />
 
           <li class="pl-4 lg:pl-0">
-            <a href="practice.html" class="uppercase text-gray-400">practice</a>
+            <a
+              href="practices/national-interest-waiver-niw/what-is-national-interest-waiver.html"
+              class="uppercase text-gray-400"
+              >practice</a
+            >
           </li>
 
           <hr class="border-gray-300" />
@@ -89,54 +93,187 @@
           </li>
         </ul>
       </nav>
+      <!-- Dynamic Navbar on Desktop only -->
+      <!-- <nav
+        class="hidden nav-dynamic fixed top-0 left-0 right-0 z-20 bg-white shadow-md lg:block"
+        id="nav-dynamic"
+      >
+        <div
+          class="container mx-auto flex items-center justify-center lg:justify-between py-2 px-8 lg:px-0"
+        >
+          <div class="logo mx-auto lg:mx-0">
+            <a href="index.html">
+              <img class="w-5/6" alt="logo" src="images/logo.jpg" />
+            </a>
+          </div>
+          <ul
+            id="nav-list"
+            class="text-sm font-semibold bg-white flex items-center space-x-4"
+          >
+            <li class="pl-4 pt-8 lg:pl-0 lg:pt-0">
+              <a
+                href="index.html"
+                class="uppercase text-gray-400"
+                id="home-menu"
+                >home</a
+              >
+            </li>
+            <hr class="border-gray-300" />
+
+            <li class="pl-4 lg:pl-0">
+              <a href="about.html" class="uppercase font-bold">about</a>
+            </li>
+            <hr class="border-gray-300" />
+            <li class="pl-4 lg:pl-0">
+              <a
+                href="practices/national-interest-waiver-niw/what-is-national-interest-waiver.html"
+                class="uppercase text-gray-400"
+                >practice</a
+              >
+            </li>
+
+            <hr class="border-gray-300" />
+            <li class="pl-4 lg:pl-0">
+              <a href="blog.html" class="uppercase text-gray-400">blog</a>
+            </li>
+            <hr class="border-gray-300" />
+            <li class="pl-4 lg:pl-0">
+              <a
+                href="#contact"
+                id="contact-menu"
+                class="uppercase text-gray-400"
+                >contact</a
+              >
+            </li>
+            <li class="lg:hidden">
+              <div
+                id="nav-close"
+                class="nav-close w-8 h-8 rounded-full border border-gray-800 flex items-center justify-center mx-auto mt-12 cursor-pointer"
+              >
+                <i class="fa-solid fa-x text-gray-800"></i>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </nav> -->
 
       <!-- Hero -->
-      <section class="relative pt-10 pb-4">
-        <img src="images/about/hero.jpg" alt="hero image" class="bg-overlay" />
-        <!-- Main landing -->
-        <div class="container mx-auto py-24">
-          <h1
-            class="text-white tracking-wide font-bold text-5xl pl-8 md:text-6xl xl:text-7xl"
+      <section id="hero">
+        <div class="relative px-8 py-32 lg:py-40">
+          <img
+            src="images/about/hero.jpg"
+            alt="hero image"
+            class="bg-overlay-original"
+          />
+          <div
+            class="container mx-auto flex justify-center items-start flex-col"
           >
-            About
-          </h1>
+            <h1 class="font-bold text-5xl leading-none md:text-5xl lg:text-7xl">
+              Protect <br />
+              Your Rights
+            </h1>
+            <p
+              class="pt-4 text-gray-700 tracking-normal md:text-lg lg:text-xl lg:w-full"
+            >
+              Meet our attorney and see how he can help <br />
+              you win your case.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Why choose us -->
+      <section class="relative">
+        <div class="w-full flex justify-center container -mt-16 mx-auto">
+          <div
+            class="px-8 w-full grid grid-cols-1 gap-6 md:grid-cols-3 md:px-0"
+          >
+            <div
+              class="w-full bg-color-primary flex items-center justify-center flex-col p-8 mx-auto lg:justify-start"
+            >
+              <i class="fa-solid fa-user-tie text-2xl text-white"></i>
+              <h2 class="text-center text-white font-bold my-4">Expertise</h2>
+              <p class="text-center text-gray-100 leading-relaxed text-sm">
+                Attorney Jun is practicing almost every aspect of the
+                immigration law since 2005.
+              </p>
+            </div>
+            <div
+              class="w-full bg-color-primary flex items-center justify-center flex-col p-8 mx-auto lg:justify-start"
+            >
+              <i class="fa-solid fa-building-columns text-2xl text-white"></i>
+              <h2 class="text-center text-white font-bold my-4">Experience</h2>
+              <p class="text-center text-gray-100 leading-relaxed text-sm">
+                Attorney Jun himself has been through the US immigration and
+                understands clients’ needs.
+              </p>
+            </div>
+            <div
+              class="w-full bg-color-primary flex items-center justify-center flex-col p-8 mx-auto lg:justify-start"
+            >
+              <i class="fa-solid fa-earth-americas text-2xl text-white"></i>
+              <h2 class="text-center text-white font-bold my-4">Expedition</h2>
+              <p class="text-center text-gray-100 leading-relaxed text-sm">
+                Attorney Jun has served many groups of immigrants, foreign
+                nationals for their various goals.
+              </p>
+            </div>
+          </div>
         </div>
       </section>
 
       <!-- About -->
-      <section class="bg-gray-50 pb-16 px-8">
-        <div class="container mx-auto pt-20 leading-relaxed">
-          <!-- Title -->
-          <h2 class="text-center text-3xl font-bold md:text-4xl lg:text-5xl">
-            Attorney Hong-min Jun
-          </h2>
-          <div class="mt-16 mb-16 flex flex-col lg:flex-row lg:items-center">
-            <div class="order-2 pt-8 lg:pt-0 lg:pr-8 lg:order-1">
-              <p class="pb-4">
-                Attorney Hong-min Jun was born in South Korea and earned his
-                Juris Doctor (J.D.) degree from Indiana University School of Law
-                in Indiana. He also holds Master's degrees in comparative law
-                (MCL) from Indiana University School of Law and the Graduate
-                School of Kyung Hee University in Seoul.
-              </p>
-              <p>
-                Attorney Jun is licensed to practice law in the states of
-                Illinois and Indiana. He's been practicing various aspects of
-                immigration law since 2005. Having personally gone through the
-                U.S. immigration process to become a lawful permanent resident,
-                he deeply understands the needs, dreams, and goals of his
-                clients as they pursue success in the United States.
-              </p>
-            </div>
+      <section class="relative px-8 py-16">
+        <div class="flex container mx-auto">
+          <div
+            class="w-full leading-relaxed flex flex-col justify-center items-center lg:flex-row"
+          >
             <img
-              src="images/about/img.jpeg"
-              alt="about image"
-              class="w-full max-w-sm order-1 mx-auto lg:order-2 lg:max-w-md"
+              src="images/about/about.jpg"
+              alt="About image"
+              class="w-full object-cover lg:w-1/2 lg:block"
             />
+            <!-- Intro -->
+            <div class="mt-8 lg:mt-0 lg:w-1/2 lg:ml-16">
+              <!-- Title -->
+              <h2 class="text-3xl font-bold mr-auto md:text-4xl lg:text-5xl">
+                Meet Attorney <br />Hong-min Jun
+              </h2>
+              <!-- Description -->
+              <div class="text-gray-700">
+                <p class="py-8">
+                  Attorney Hong-min Jun was born in South Korea and earned his
+                  Juris Doctor (J.D.) degree from Indiana University School of
+                  Law in Indiana. He also holds Master's degrees in comparative
+                  law (MCL) from Indiana University School of Law and the
+                  Graduate School of Kyung Hee University in Seoul.
+                </p>
+                <p>
+                  Attorney Jun is licensed to practice law in the states of
+                  Illinois and Indiana. He's been practicing various aspects of
+                  immigration law since 2005. Having personally gone through the
+                  U.S. immigration process to become a lawful permanent
+                  resident, he deeply understands the needs, dreams, and goals
+                  of his clients as they pursue success in the United States.
+                </p>
+              </div>
+            </div>
           </div>
-          <div class="mt-16 mb-16 flex flex-col lg:flex-row lg:items-center">
-            <div class="order-2 pt-8 lg:pt-0 lg:pl-8 lg:w-3/5">
-              <p class="pb-4">
+        </div>
+      </section>
+
+      <!-- Experiences -->
+      <section class="relative px-8 py-16 bg-color-primary">
+        <div class="flex flex-col items-center container mx-auto lg:flex-row">
+          <!-- Intro -->
+          <div class="mt-4 order-2 lg:mt-0 lg:w-1/2 lg:mr-16 lg:order-1">
+            <!-- Title -->
+            <h2 class="text-white text-3xl font-bold md:text-4xl lg:text-5xl">
+              Experiences
+            </h2>
+            <!-- Description -->
+            <div class="text-gray-100">
+              <p class="py-8">
                 Attorney Jun has assisted a diverse range of immigrant and
                 foreign national groups with various objectives, including
                 investors, students, families, employers, companies, churches,
@@ -155,38 +292,48 @@
                 Attorney Jun has conducted various seminars at different venues
                 upon request, covering topics such as changes in immigration
                 laws and regulations, explanations of immigration options,
-                including H1b, OPT,
-                <strong class="italic"
-                  >National Interest Waiver (NIW), Marriage Green Cards,
-                  E2,</strong
-                >
-                and more. His commitment to informing and assisting immigrants
-                extends beyond immigration law and encompasses other areas such
-                as personal matters, including Wills and Trusts, Divorce, Lease
-                Agreements, DUI, and car accidents.
+                including H1b, OPT, National Interest Waiver (NIW), Marriage
+                Green Cards, E2, and more. His commitment to informing and
+                assisting immigrants extends beyond immigration law and
+                encompasses other areas such as personal matters, including
+                Wills and Trusts, Divorce, Lease Agreements, DUI, and car
+                accidents.
               </p>
             </div>
-            <div class="order-1 flex flex-col mx-auto max-w-md lg:w-2/5">
-              <img
-                src="images/about/img-2.jpg"
-                alt="about image"
-                class="w-full block mb-4 max-w-sm"
-                id="about-second-img"
-              />
-              <img
-                src="images/about/img-3.jpg"
-                alt="about image"
-                class="w-full max-w-sm"
-              />
-            </div>
           </div>
+
           <div
-            class="mt-16 flex flex-col lg:flex-row lg:items-center lg:justify-between"
+            class="flex flex-col justify-between w-full order-1 space-y-6 lg:w-1/2 lg:order-2"
           >
-            <div class="flex flex-col order-2 lg:order-1">
-              <div>
-                <strong>Qualification</strong>
-                <ul class="list-disc ml-4 leading-loose mt-2">
+            <img
+              src="images/about/experience.jpeg"
+              alt="experience image 1"
+              class="object-cover aspect-square"
+            />
+            <img
+              src="images/about/experience-2.jpg"
+              alt="experience image 2"
+              class="object-cover aspect-square"
+            />
+          </div>
+        </div>
+      </section>
+
+      <!-- Qualifications and Education -->
+      <section class="relative py-16 bg-gray-100">
+        <div class="flex justify-center container mx-auto">
+          <div class="flex flex-col space-y-6 w-full">
+            <div class="w-full bg-white">
+              <div
+                class="w-full flex flex-col items-center justify-center mx-auto space-x-16 p-8 lg:w-9/12 lg:flex-row"
+              >
+                <div class="flex flex-col items-center w-1/5">
+                  <i class="fa-solid fa-scale-balanced text-2xl"></i>
+                  <h2 class="text-center font-bold my-4">Qualifications</h2>
+                </div>
+                <ul
+                  class="list-disc leading-relaxed text-gray-700 text-sm ml-4 w-4/5"
+                >
                   <li>Indiana University School of Law – Bloomington (LL.M)</li>
                   <li>Indiana University School of Law – Indianapolis (J.D)</li>
                   <li>SK Group (formerly known Sunkyung) in South Korea</li>
@@ -198,23 +345,44 @@
                   <li>In-house counselor of Canaria Bio Inc.</li>
                 </ul>
               </div>
-              <div class="mt-8">
-                <strong>Admission</strong>
-                <ul class="list-disc ml-4 leading-relaxed mt-2">
+            </div>
+
+            <div class="w-full bg-white">
+              <div
+                class="w-full flex flex-col items-center justify-center mx-auto space-x-16 p-8 lg:w-9/12 lg:flex-row"
+              >
+                <div class="flex flex-col items-center w-1/5">
+                  <i class="fa-solid fa-school text-2xl"></i>
+                  <h2 class="text-center font-bold my-4">Education</h2>
+                </div>
+                <ul
+                  class="list-disc leading-relaxed text-gray-700 text-sm ml-4 w-4/5"
+                >
                   <li>States of Illinois(2010) and Indiana(2005)</li>
                 </ul>
               </div>
             </div>
-            <img
-              src="images/about/img-4.png"
-              alt="about image"
-              class="w-full block mb-8 order-1 max-w-sm mx-auto lg:order-2 lg:m-0 lg:max-w-md"
-            />
           </div>
+        </div>
+      </section>
 
-          <div class="mt-8">
-            <strong>Presentations</strong>
-            <ul class="list-disc ml-4 leading-loose mt-2">
+      <img
+        src="images/about/image.jpg"
+        alt=""
+        class="w-full h-96 object-cover"
+      />
+
+      <!-- Presentations -->
+      <section class="relative px-8 py-16 bg-gray-100">
+        <div class="container mx-auto">
+          <!-- Intro -->
+          <div class="bg-white p-8 mb-6">
+            <!-- Title -->
+            <h2 class="text-center text-3xl font-bold md:text-4xl lg:text-5xl">
+              Presentations
+            </h2>
+            <!-- Description -->
+            <ul class="list-disc leading-loose ml-4 mt-8 text-gray-700">
               <li>
                 Legal Info Session on Will and Trust for Indiana Korean
                 Association members (2023)
@@ -275,71 +443,95 @@
               </li>
             </ul>
           </div>
+
+          <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+            <img
+              src="images/about/presentation-1.jpg"
+              alt=""
+              class="object-cover w-full aspect-square"
+            />
+            <img
+              src="images/about/presentation-2.png"
+              alt=""
+              class="object-cover w-full aspect-square"
+            />
+            <img
+              src="images/about/presentation-3.jpeg"
+              alt=""
+              class="object-cover w-full aspect-square"
+            />
+          </div>
         </div>
       </section>
     </main>
 
     <!-- Footer -->
     <footer
-      class="relative flex flex-col items-center justify-between px-4 pt-8 bg-footer text-white"
+      class="relative flex flex-col items-center justify-between px-4 py-8 bg-white"
     >
       <!-- Social Links & Copyright-->
-      <div class="flex flex-col items-center mb-4 text-gray-400 lg:mb-6">
-        <ul class="flex space-x-5 mb-8 mt-4 text-sm lg:text-base lg:space-x-8">
+      <div class="flex flex-col items-center">
+        <ul class="flex space-x-5 text-sm lg:text-base lg:space-x-8">
           <li>
-            <a href="index.html" class="font-semibold uppercase">home</a>
-          </li>
-          <li>
-            <a href="about.html" class="uppercase font-bold text-gray-100"
-              >about</a
+            <a href="index.html" class="font-semibold uppercase text-gray-500"
+              >home</a
             >
           </li>
           <li>
-            <a href="practice.html" class="uppercase font-semibold">practice</a>
+            <a href="about.html" class="uppercase font-bold">about</a>
           </li>
           <li>
-            <a href="blog.html" class="uppercase font-semibold">blog</a>
+            <a
+              href="practices/national-interest-waiver-niw/what-is-national-interest-waiver.html"
+              class="uppercase font-semibold text-gray-500"
+              >practice</a
+            >
+          </li>
+          <li>
+            <a href="blog.html" class="uppercase font-semibold text-gray-500"
+              >blog</a
+            >
           </li>
           <li>
             <a
               href="index.html#contact"
               id="contact-menu"
-              class="uppercase font-semibold"
+              class="uppercase font-semibold text-gray-500"
               >contact</a
             >
           </li>
         </ul>
         <!-- Social Links -->
         <div
-          class="flex justify-center items-center space-x-6 mt-2 mb-4 text-xs"
+          class="flex justify-center items-center space-x-6 my-4 text-xs text-gray-500"
         >
           <a
             href="https://www.facebook.com/attorneyHongmin/"
             target="_blank"
             rel="noopener noreferrer"
-            ><i class="fa-brands fa-facebook fa-2x"></i
+            ><i class="fa-brands fa-facebook text-2xl"></i
           ></a>
           <a
             href="https://www.youtube.com/channel/UCTdlANUzhWd-q1nQWZrwe1A"
             target="_blank"
             rel="noopener noreferrer"
-            ><i class="fa-brands fa-youtube fa-2x"></i
+            ><i class="fa-brands fa-youtube text-2xl"></i
           ></a>
           <a
             href="https://podcasters.spotify.com/pod/show/hong-min-jun/episodes/2-3-e182h6q?%24web_only=true&_branch_match_id=1082700781583200787&utm_source=web&utm_campaign=web-share&utm_medium=sharing&_branch_referrer=H4sIAAAAAAAAA8soKSkottLXLy7IL8lMq0zMS87IL9ItT03SSywo0MvJzMvWT9X38s%2F0KQ8tDPEtTgIAUr4%2BxDAAAAA%3D"
             target="_blank"
             rel="noopener noreferrer"
-            ><i class="fa-brands fa-spotify fa-2x"></i
+            ><i class="fa-brands fa-spotify text-2xl"></i
           ></a>
           <a
             href="https://www.linkedin.com/in/hong-min-jun-74696b129/"
             target="_blank"
             rel="noopener noreferrer"
-            ><i class="fa-brands fa-linkedin-in fa-2x"></i
+            ><i class="fa-brands fa-linkedin-in text-2xl"></i
           ></a>
         </div>
         <!-- Copyright -->
-        <div class="font-medium mb-1 text-xs lg:text-sm">
+        <div class="font-medium text-xs text-gray-500 lg:text-sm">
           &copy; Law Office of Hong-min Jun x Powered by
           <a
             href="https://webtamin.co/"
@@ -349,16 +541,31 @@
             >Webtamin</a
           >
         </div>
-        <p></p>
+        <ul class="flex space-x-2 text-xs mt-2 text-gray-500">
+          <li>
+            <a href="disclaimer.html" referrerpolicy="noopener nofollow"
+              >Disclaimer</a
+            >
+          </li>
+          <li>|</li>
+          <li>
+            <a href="sitemap.html" referrerpolicy="noopener nofollow"
+              >Sitemap</a
+            >
+          </li>
+        </ul>
       </div>
     </footer>
+
     <!-- Go to Top -->
     <div
-      class="top-btn fixed right-6 bottom-6 w-12 h-12 rounded-full bg-gray-300 text-white flex items-center justify-center cursor-pointer"
+      class="top-btn fixed right-6 bottom-6 w-12 h-12 rounded-full bg-gray-300 text-white flex items-center justify-center cursor-pointer z-50"
       id="top-btn"
     >
       <i class="fa-solid fa-arrow-up text-gray-800 text-xl"></i>
     </div>
+
     <script src="js/index.js"></script>
+    <script src="js/swiper.js"></script>
   </body>
 </html>
