@@ -8,6 +8,7 @@ const topBtn = document.getElementById('top-btn')
 function toggleSideNavbar() {
   navList.classList.toggle('show')
   if (navOverlay !== null) {
+    if (document.body.clientWidth > 1024) return
     navOverlay.classList.toggle('hidden')
   }
 }
@@ -33,7 +34,7 @@ function handleSideNavbar() {
 
   if (contactMenu !== null) {
     contactMenu.addEventListener('click', () => {
-      navList.classList.toggle('show')
+      toggleSideNavbar()
     })
   }
 }
