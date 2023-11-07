@@ -6,7 +6,7 @@
 @layer components {
   /* added to tailwind.config.js */
   html {
-    /* scroll-behavior: smooth; */
+    scroll-behavior: smooth;
   }
 }
 /* #951920 */

@@ -2,7 +2,6 @@ const menuToggle = document.getElementById('menu-toggle')
 const navList = document.getElementById('nav-list')
 const navClose = document.getElementById('nav-close')
 const navOverlay = document.getElementById('nav-overlay')
-const navDynamic = document.getElementById('nav-dynamic')
 const contactMenu = document.getElementById('contact-menu')
 const topBtn = document.getElementById('top-btn')
 
@@ -44,56 +43,6 @@ function goToTop() {
     top: 0,
     behavior: 'smooth',
   })
-}
-
-function handleDynamicNavbar() {
-  // Index page: navbar after services section
-  if (document.getElementById('services') !== null) {
-    const servicesEl = document.getElementById('services')
-    // Go below services section
-    if (window.scrollY > servicesEl.offsetTop + servicesEl.offsetHeight) {
-      if (navDynamic.classList.contains('show')) return
-      navDynamic.classList.add('show')
-    }
-    // Go above services section
-    else {
-      if (navDynamic.classList.contains('show')) {
-        navDynamic.classList.remove('show')
-      }
-    }
-  }
-}
-
-function switchActiveLinkInDynamicNavbar() {
-  if (document.getElementById('testimonials') !== null) {
-    const testimonialsEl = document.getElementById('testimonials')
-    const contactMenuEl = navDynamic.querySelector('#contact-menu')
-    const homeMenuEl = navDynamic.querySelector('#home-menu')
-
-    // Go below testimonials section
-    if (
-      window.scrollY >
-      testimonialsEl.offsetTop + testimonialsEl.offsetHeight
-    ) {
-      if (homeMenuEl.classList.contains('font-bold')) {
-        homeMenuEl.classList.remove('font-bold')
-        homeMenuEl.classList.add('text-gray-400')
-      }
-      if (contactMenuEl.classList.contains('font-bold')) return
-      contactMenuEl.classList.add('font-bold')
-      contactMenuEl.classList.remove('text-gray-400')
-    }
-    // Go above testimonials section
-    else {
-      if (contactMenuEl.classList.contains('font-bold')) {
-        contactMenuEl.classList.remove('font-bold')
-        contactMenuEl.classList.add('text-gray-400')
-      }
-      if (homeMenuEl.classList.contains('font-bold')) return
-      homeMenuEl.classList.add('font-bold')
-      homeMenuEl.classList.remove('text-gray-400')
-    }
-  }
 }
 
 function handleGoToTopBtn() {
@@ -149,8 +98,6 @@ function initAllEventListeners() {
   // Scroll
   window.addEventListener('scroll', () => {
     handleGoToTopBtn()
-    handleDynamicNavbar()
-    switchActiveLinkInDynamicNavbar()
   })
   // SideNavbar
   handleSideNavbar()

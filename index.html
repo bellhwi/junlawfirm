@@ -99,66 +99,6 @@
           </li>
         </ul>
       </nav>
-      <!-- Dynamic Navbar on Desktop only -->
-      <!-- <nav
-        class="hidden nav-dynamic fixed top-0 left-0 right-0 z-20 bg-white shadow-md lg:block"
-        id="nav-dynamic"
-      >
-        <div
-          class="container mx-auto flex items-center justify-center lg:justify-between py-2 px-8 lg:px-0"
-        >
-          <div class="logo mx-auto lg:mx-0">
-            <a href="index.html">
-              <img class="w-5/6" alt="logo" src="images/logo.jpg" />
-            </a>
-          </div>
-          <ul
-            id="nav-list"
-            class="text-sm font-semibold bg-white flex items-center space-x-4"
-          >
-            <li class="pl-4 pt-8 lg:pl-0 lg:pt-0">
-              <a href="index.html" class="uppercase font-bold" id="home-menu"
-                >home</a
-              >
-            </li>
-            <hr class="border-gray-300" />
-
-            <li class="pl-4 lg:pl-0">
-              <a href="about.html" class="uppercase text-gray-400">about</a>
-            </li>
-            <hr class="border-gray-300" />
-            <li class="pl-4 lg:pl-0">
-              <a
-                href="practices/national-interest-waiver-niw/what-is-national-interest-waiver.html"
-                class="uppercase text-gray-400"
-                >practice</a
-              >
-            </li>
-
-            <hr class="border-gray-300" />
-            <li class="pl-4 lg:pl-0">
-              <a href="blog.html" class="uppercase text-gray-400">blog</a>
-            </li>
-            <hr class="border-gray-300" />
-            <li class="pl-4 lg:pl-0">
-              <a
-                href="#contact"
-                id="contact-menu"
-                class="uppercase text-gray-400"
-                >contact</a
-              >
-            </li>
-            <li class="lg:hidden">
-              <div
-                id="nav-close"
-                class="nav-close w-8 h-8 rounded-full border border-gray-800 flex items-center justify-center mx-auto mt-12 cursor-pointer"
-              >
-                <i class="fa-solid fa-x text-gray-800"></i>
-              </div>
-            </li>
-          </ul>
-        </div>
-      </nav> -->
 
       <!-- Hero -->
       <section id="hero">
@@ -189,19 +129,18 @@
 
       <!-- Welcome -->
       <section class="relative bg-color-primary px-8 py-16">
-        <div class="flex container mx-auto">
+        <div class="flex flex-col container mx-auto lg:flex-row">
           <div
-            class="w-full leading-relaxed flex flex-col justify-center lg:w-1/2 lg:mr-16"
+            class="order-2 w-full leading-relaxed flex flex-col justify-center lg:w-1/2 lg:mr-16 lg:order-1"
           >
             <!-- Title -->
             <h2
-              class="text-3xl text-white font-bold mr-auto md:text-4xl lg:text-5xl"
+              class="my-4 text-3xl text-white font-bold mr-auto md:text-4xl lg:text-5xl"
             >
               Welcome
             </h2>
             <!-- Intro -->
             <div class="text-gray-100">
-              <p class="font-semibold pb-8 lg:text-lg"></p>
               <p class="pb-4">
                 Law Office of Hong-min Jun, is a law firm dedicated to providing
                 strong legal representation for clients throughout the state of
@@ -222,7 +161,7 @@
           <img
             src="images/welcome.jpg"
             alt="About image"
-            class="hidden object-cover aspect-square lg:w-1/2 lg:block"
+            class="order-1 block w-full object-cover aspect-square lg:w-1/2 lg:order-2"
           />
         </div>
       </section>
