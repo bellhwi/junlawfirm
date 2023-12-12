@@ -7,11 +7,15 @@ const swiperHero = new Swiper('.swiper-hero', {
     el: '.swiper-pagination', // Pagination element
     clickable: true, // Allow clickable pagination bullets
   },
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
   effect: 'coverflow',
-  // autoplay: {
-  //   delay: 5000,
-  //   pauseOnMouseEnter: true,
-  // },
+  autoplay: {
+    delay: 5000,
+    pauseOnMouseEnter: false,
+  },
 })
 
 const swiperTestimonial = new Swiper('.swiper-testimonial', {

@@ -10,13 +10,12 @@
   }
 }
 /* #951920 */
-/* #1246B7 */
 
 :root {
-  --bg-color-primary: #1246b7;
-  --bg-color-secondary: #f2e6cc;
-  --text-color-primary: #1246b7;
-  --text-color-secondary: #f2e6cc;
+  --bg-color-primary: #343a40;
+  --bg-color-secondary: #adb5bd;
+  --text-color-primary: #343a40;
+  --text-color-secondary: #adb5bd;
 }
 
 a {
@@ -52,7 +51,7 @@ a {
 }
 
 .bg-hero {
-  background-image: url('../images/hero.jpg');
+  background-image: url('../images/about-landscape-cropped.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   position: absolute;
@@ -169,4 +168,50 @@ a {
 .fa-brands:hover,
 .powered-by:hover {
   color: var(--text-color-primary);
+}
+
+.heading-anim {
+  opacity: 0;
+  transform: translateX(50px);
+  animation: fadeInRight 1s forwards;
+}
+.desc-anim {
+  opacity: 0;
+  transform: translateX(50px);
+  animation: fadeInRight 1s forwards;
+  transition-delay: 500ms;
+}
+.cta-anim {
+  opacity: 0;
+  transform: translateX(50px);
+  animation: fadeInRight 1s forwards;
+  transition-delay: 1000ms;
+}
+.arrow-anim {
+  opacity: 1;
+  animation: fadeIn 1s ease-in;
+  transition-delay: 1000ms;
+}
+
+.bg-footer {
+  background-color: #4b3d1f;
+}
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
