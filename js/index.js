@@ -4,6 +4,7 @@ const navClose = document.getElementById('nav-close')
 const navOverlay = document.getElementById('nav-overlay')
 const contactMenu = document.getElementById('contact-menu')
 const topBtn = document.getElementById('top-btn')
+const practiceAreasMenu = document.getElementById('practice-areas-menu')
 
 function toggleSideNavbar() {
   navList.classList.toggle('show')
@@ -91,6 +92,18 @@ function handleGoToTopBtn() {
   }
 }
 
+function togglePracticeAreasMenu() {
+  practiceAreasMenu.addEventListener('mouseenter', (e) => {
+    const menu = e.target.querySelector('ul')
+    menu.classList.remove('hidden')
+  })
+
+  practiceAreasMenu.addEventListener('mouseleave', (e) => {
+    const menu = e.target.querySelector('ul')
+    menu.classList.add('hidden')
+  })
+}
+
 function initAllEventListeners() {
   // Go to top button
   if (topBtn !== null) {
@@ -102,6 +115,8 @@ function initAllEventListeners() {
   })
   // SideNavbar
   handleSideNavbar()
+  // Toggle practice areas menu
+  togglePracticeAreasMenu()
 }
 
 initAllEventListeners()
