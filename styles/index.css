@@ -6,7 +6,7 @@
 @layer components {
   /* added to tailwind.config.js */
   html {
-    scroll-behavior: smooth;
+    /* scroll-behavior: smooth; */
   }
 }
 /* #951920 */
@@ -113,7 +113,7 @@ a {
 }
 
 .nav {
-  transform: translateX(-9rem);
+  transform: translateX(-11rem);
   transition: all 0.4s;
 }
 

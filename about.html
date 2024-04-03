@@ -32,7 +32,7 @@
     <main>
       <!-- Navbar -->
       <nav
-        class="container mx-auto flex items-center justify-center lg:justify-between py-2 px-8 lg:px-0"
+        class="z-50 absolute left-0 top-0 right-0 py-2 px-8 container mx-auto flex items-center justify-center lg:justify-between lg:px-0"
       >
         <!-- Navbar on overlay in mobile screen -->
         <div class="nav-overlay hidden" id="nav-overlay"></div>
@@ -45,41 +45,106 @@
         <!-- Logo -->
         <div class="logo mx-auto lg:mx-0">
           <a href="index.html">
-            <img class="w-5/6" alt="logo" src="images/logo.jpg" />
+            <img alt="logo" src="images/logo.png" />
           </a>
         </div>
         <!-- Nav list -->
         <ul
           id="nav-list"
-          class="nav fixed left-0 top-0 h-full w-36 bg-gray-100 text-gray-800 z-20 text-sm font-semibold space-y-4 tracking-wide lg:w-auto lg:bg-white lg:relative lg:flex lg:items-center lg:space-y-0 lg:space-x-4 lg:translate-x-0"
+          class="nav fixed left-0 top-0 h-full w-36 bg-gray-100 text-color-primary z-20 text-sm font-semibold space-y-4 tracking-wide lg:w-auto lg:bg-transparent lg:relative lg:flex lg:items-center lg:space-y-0 lg:space-x-4 lg:translate-x-0 lg:text-base"
         >
           <li class="pl-4 pt-8 lg:pl-0 lg:pt-0">
-            <a href="index.html" class="text-gray-400 uppercase">home</a>
-          </li>
-          <hr class="border-gray-300" />
-          <li class="pl-4 lg:pl-0">
-            <a href="about.html" class="uppercase font-bold">about</a>
-          </li>
-          <hr class="border-gray-300" />
-
-          <li class="pl-4 lg:pl-0">
-            <a
-              href="practices/national-interest-waiver-niw/what-is-national-interest-waiver.html"
-              class="uppercase text-gray-400"
-              >practice</a
+            <a href="index.html" class="font-bold uppercase text-color-primary"
+              >home</a
             >
           </li>
+          <hr class="border-gray-300" />
+          <li class="pl-4 lg:pl-0">
+            <a
+              href="about.html"
+              class="underline-offset-4 underline uppercase text-color-primary"
+              >about</a
+            >
+          </li>
+          <hr class="border-gray-300" />
+
+          <li class="relative pl-4 lg:pl-0" id="practice-areas-menu">
+            <a class="uppercase text-color-primary cursor-pointer"
+              >practice areas <i class="fa-solid fa-chevron-down"></i
+            ></a>
+            <ul
+              class="hidden font-normal w-max z-50 absolute top-0 left-0 mt-6 text-white bg-color-primary p-4 space-y-3 text-sm"
+            >
+              <li>
+                <a
+                  href="practices/national-interest-waiver-niw/what-is-national-interest-waiver.html"
+                  class="uppercase"
+                  >National Interest Waiver</a
+                >
+              </li>
+              <hr class="border-gray-300" />
+              <li>
+                <a
+                  href="practices/marriage-green-card/who-can-be-a-sponsor-for-marriage-green-card.html"
+                  class="uppercase"
+                  >Green Card Through Marriage
+                </a>
+              </li>
+              <hr class="border-gray-300" />
+              <li>
+                <a
+                  href="practices/treaty-investment-e-2/treaty-investment-e-2.html"
+                  class="uppercase"
+                  >Treaty Investment Visa (E2)
+                </a>
+              </li>
+              <hr class="border-gray-300" />
+              <li>
+                <a
+                  href="practices/asylum-application-and-defense-of-deportation/asylum.html"
+                  class="uppercase"
+                  >Asylum Application and Defense of Deportation
+                </a>
+              </li>
+              <hr class="border-gray-300" />
+              <li>
+                <a
+                  href="practices/personal-injury/personal-injury.html"
+                  class="uppercase"
+                  >Personal Injury
+                </a>
+              </li>
+              <hr class="border-gray-300" />
+              <li>
+                <a
+                  href="practices/wills-and-trusts/importance-of-having-a-will-prepared-from-an-immigrant.html"
+                  class="uppercase"
+                  >Wills and Trusts
+                </a>
+              </li>
+            </ul>
+          </li>
 
           <hr class="border-gray-300" />
           <li class="pl-4 lg:pl-0">
-            <a href="blog.html" class="uppercase text-gray-400">blog</a>
+            <a href="blog.html" class="uppercase text-color-primary">blog</a>
+          </li>
+          <hr class="border-gray-300" />
+          <li class="pl-4 lg:pl-0">
+            <a
+              href="https://blog.naver.com/hongminjun"
+              rel="  noopener"
+              target="_blank"
+              class="uppercase text-color-primary"
+              >korean blog</a
+            >
           </li>
           <hr class="border-gray-300" />
           <li class="pl-4 lg:pl-0">
             <a
               href="index.html#contact"
               id="contact-menu"
-              class="uppercase text-gray-400"
+              class="uppercase text-color-primary"
               >contact</a
             >
           </li>
@@ -177,7 +242,7 @@
                 Meet Attorney <br />Hong-min Jun
               </h2>
               <!-- Description -->
-              <div class="text-gray-700">
+              <div class="text-gray-600">
                 <p class="py-4">
                   Attorney Hong-min Jun was born in South Korea and earned his
                   Juris Doctor (J.D.) degree from Indiana University School of
@@ -262,7 +327,7 @@
           <div class="flex flex-col space-y-6 w-full">
             <div class="w-full bg-white">
               <div
-                class="w-full flex flex-col items-center justify-center mx-auto space-x-16 p-8 lg:w-9/12 lg:flex-row"
+                class="w-full flex flex-col items-center justify-center mx-auto lg:space-x-16 p-8 lg:w-9/12 lg:flex-row"
               >
                 <div class="flex flex-col items-center w-1/5">
                   <i class="fa-solid fa-scale-balanced text-2xl"></i>
@@ -286,7 +351,7 @@
 
             <div class="w-full bg-white">
               <div
-                class="w-full flex flex-col items-center justify-center mx-auto space-x-16 p-8 lg:w-9/12 lg:flex-row"
+                class="w-full flex flex-col items-center justify-center mx-auto lg:space-x-16 p-8 lg:w-9/12 lg:flex-row"
               >
                 <div class="flex flex-col items-center w-1/5">
                   <i class="fa-solid fa-school text-2xl"></i>
@@ -319,7 +384,7 @@
               Presentations
             </h2>
             <!-- Description -->
-            <ul class="list-disc leading-loose ml-4 mt-8 text-gray-700">
+            <ul class="list-disc leading-loose ml-4 mt-8 text-gray-600">
               <li>
                 Legal Info Session on Will and Trust for Indiana Korean
                 Association members (2023)
@@ -404,40 +469,15 @@
 
     <!-- Footer -->
     <footer
-      class="relative flex flex-col items-center justify-between px-4 py-8 bg-white"
+      class="relative flex flex-col items-center justify-between px-4 py-8 bg-gray-100"
     >
+      <div class="logo mx-auto lg:mx-0">
+        <a href="index.html">
+          <img alt="logo" src="images/logo.png" />
+        </a>
+      </div>
       <!-- Social Links & Copyright-->
       <div class="flex flex-col items-center">
-        <ul class="flex space-x-5 text-sm lg:text-base lg:space-x-8">
-          <li>
-            <a href="index.html" class="font-semibold uppercase text-gray-500"
-              >home</a
-            >
-          </li>
-          <li>
-            <a href="about.html" class="uppercase font-bold">about</a>
-          </li>
-          <li>
-            <a
-              href="practices/national-interest-waiver-niw/what-is-national-interest-waiver.html"
-              class="uppercase font-semibold text-gray-500"
-              >practice</a
-            >
-          </li>
-          <li>
-            <a href="blog.html" class="uppercase font-semibold text-gray-500"
-              >blog</a
-            >
-          </li>
-          <li>
-            <a
-              href="index.html#contact"
-              id="contact-menu"
-              class="uppercase font-semibold text-gray-500"
-              >contact</a
-            >
-          </li>
-        </ul>
         <!-- Social Links -->
         <div
           class="flex justify-center items-center space-x-6 my-4 text-xs text-gray-500"
@@ -473,18 +513,18 @@
           <a
             href="https://webtamin.co/"
             target="_blank"
-            rel="noopener nofollow"
+            rel="noopener"
             class="powered-by"
             >Webtamin</a
           >
         </div>
         <ul class="flex space-x-2 text-xs mt-2 text-gray-500">
           <li>
-            <a href="disclaimer.html" rel="noopener nofollow">Disclaimer</a>
+            <a href="disclaimer.html" rel="noopener  ">Disclaimer</a>
           </li>
           <li>|</li>
           <li>
-            <a href="sitemap.html" rel="noopener nofollow">Sitemap</a>
+            <a href="sitemap.html" rel="noopener  ">Sitemap</a>
           </li>
         </ul>
       </div>
