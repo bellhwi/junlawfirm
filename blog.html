@@ -837,41 +837,18 @@
 
     <!-- Footer -->
     <footer
-      class="relative flex flex-col items-center justify-between px-4 pt-8 bg-footer text-white"
+      class="relative flex flex-col items-center justify-between px-4 py-8 bg-gray-100"
     >
+      <div class="logo mx-auto lg:mx-0">
+        <a href="index.html">
+          <img alt="logo" src="images/logo.png" />
+        </a>
+      </div>
       <!-- Social Links & Copyright-->
-      <div class="flex flex-col items-center mb-4 text-gray-400 lg:mb-6">
-        <ul class="flex space-x-5 mb-8 mt-4 text-sm lg:text-base lg:space-x-8">
-          <li>
-            <a href="index.html" class="font-semibold uppercase">home</a>
-          </li>
-          <li>
-            <a href="about.html" class="uppercase font-semibold">about</a>
-          </li>
-          <li>
-            <a
-              href="practices/national-interest-waiver-niw/what-is-national-interest-waiver.html"
-              class="uppercase font-semibold"
-              >practice</a
-            >
-          </li>
-          <li>
-            <a href="blog.html" class="uppercase font-bold text-gray-100"
-              >blog</a
-            >
-          </li>
-          <li>
-            <a
-              href="index.html#contact"
-              id="contact-menu"
-              class="uppercase font-semibold"
-              >contact</a
-            >
-          </li>
-        </ul>
+      <div class="flex flex-col items-center">
         <!-- Social Links -->
         <div
-          class="flex justify-center items-center space-x-6 mt-2 mb-4 text-xs"
+          class="flex justify-center items-center space-x-6 my-4 text-xs text-gray-500"
         >
           <a
             href="https://www.facebook.com/attorneyHongmin/"
@@ -899,8 +876,9 @@
           ></a>
         </div>
         <!-- Copyright -->
-        <div class="font-medium mb-1 text-xs lg:text-sm">
-          &copy; Law Office of Hong-min Jun x Powered by
+        <div class="font-medium text-xs text-gray-500 lg:text-sm">
+          &copy; <span id="currentYear"></span> Law Office of Hong-min Jun x
+          Powered by
           <a
             href="https://webtamin.co/"
             target="_blank"
@@ -909,6 +887,15 @@
             >Webtamin</a
           >
         </div>
+        <ul class="flex space-x-2 text-xs mt-2 text-gray-500">
+          <li>
+            <a href="disclaimer.html" rel="noopener  ">Disclaimer</a>
+          </li>
+          <li>|</li>
+          <li>
+            <a href="sitemap.html" rel="noopener  ">Sitemap</a>
+          </li>
+        </ul>
       </div>
     </footer>
     <!-- Go to Top -->

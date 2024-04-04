@@ -5,6 +5,8 @@ const navOverlay = document.getElementById('nav-overlay')
 const contactMenu = document.getElementById('contact-menu')
 const topBtn = document.getElementById('top-btn')
 const practiceAreasMenu = document.getElementById('practice-areas-menu')
+const getCurrentYear = new Date().getFullYear()
+const currentYear = document.getElementById('currentYear')
 
 function toggleSideNavbar() {
   navList.classList.toggle('show')
@@ -116,3 +118,4 @@ function initAllEventListeners() {
 }
 
 initAllEventListeners()
+currentYear.innerText = getCurrentYear
