@@ -11,6 +11,7 @@ function toggleSideNavbar() {
   if (navOverlay !== null) {
     if (document.body.clientWidth > 1024) return
     navOverlay.classList.toggle('hidden')
+    practiceAreasMenu.querySelector('ul').classList.add('hidden')
   }
 }
 
@@ -93,14 +94,9 @@ function handleGoToTopBtn() {
 }
 
 function togglePracticeAreasMenu() {
-  practiceAreasMenu.addEventListener('mouseenter', (e) => {
-    const menu = e.target.querySelector('ul')
-    menu.classList.remove('hidden')
-  })
-
-  practiceAreasMenu.addEventListener('mouseleave', (e) => {
-    const menu = e.target.querySelector('ul')
-    menu.classList.add('hidden')
+  practiceAreasMenu.addEventListener('click', (e) => {
+    const menu = e.target
+    menu.querySelector('ul')?.classList.toggle('hidden')
   })
 }
 

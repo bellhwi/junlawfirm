@@ -33,7 +33,7 @@
     <main>
       <!-- Navbar -->
       <nav
-        class="z-50 absolute left-0 top-0 right-0 py-2 px-8 container mx-auto flex items-center justify-center lg:justify-between lg:px-0"
+        class="z-50 absolute inset-x-0 py-2 px-8 container mx-auto flex items-center justify-center lg:justify-between lg:px-0"
       >
         <!-- Navbar on overlay in mobile screen -->
         <div class="nav-overlay hidden" id="nav-overlay"></div>
@@ -45,8 +45,8 @@
         </div>
         <!-- Logo -->
         <div class="logo mx-auto lg:mx-0">
-          <a href="../index.html">
-            <img alt="logo" src="../images/logo.png" />
+          <a href="../../index.html">
+            <img alt="logo" src="../../images/logo.png" />
           </a>
         </div>
         <!-- Nav list -->
@@ -56,25 +56,31 @@
         >
           <li class="pl-4 pt-8 lg:pl-0 lg:pt-0">
             <a
-              href="../index.html"
-              class="font-bold uppercase text-color-primary"
+              href="../../index.html"
+              class="uppercase text-gray-400 lg:text-gray-800"
               >home</a
             >
           </li>
           <hr class="border-gray-300" />
           <li class="pl-4 lg:pl-0">
-            <a href="../about.html" class="uppercase text-color-primary"
+            <a
+              href="../../about.html"
+              class="uppercase text-gray-400 lg:text-gray-800"
               >about</a
             >
           </li>
           <hr class="border-gray-300" />
 
-          <li class="relative pl-4 lg:pl-0" id="practice-areas-menu">
-            <a class="uppercase text-color-primary cursor-pointer"
+          <li
+            class="lg:uppercase relative pl-4 cursor-pointer lg:pl-0"
+            id="practice-areas-menu"
+          >
+            <span
+              class="pointer-events-none uppercase text-gray-400 lg:text-gray-800"
               >practice areas <i class="fa-solid fa-chevron-down"></i
-            ></a>
+            ></span>
             <ul
-              class="hidden font-normal w-max z-50 absolute top-0 left-0 mt-6 text-white bg-color-primary p-4 space-y-3 text-sm"
+              class="hidden font-normal w-max z-50 absolute top-0 left-0 mt-6 text-white bg-color-primary p-4 space-y-3 text-xs md:text-sm"
             >
               <li>
                 <a
@@ -129,8 +135,8 @@
           <hr class="border-gray-300" />
           <li class="pl-4 lg:pl-0">
             <a
-              href="../blog.html"
-              class="lg:underline-offset-4 lg:underline uppercase text-color-primary"
+              href="../../blog.html"
+              class="uppercase lg:text-gray-800 lg:underline lg:underline-offset-4"
               >blog</a
             >
           </li>
@@ -140,16 +146,16 @@
               href="https://blog.naver.com/hongminjun"
               rel="  noopener"
               target="_blank"
-              class="uppercase text-color-primary"
+              class="uppercase text-gray-400 lg:text-gray-800"
               >korean blog</a
             >
           </li>
           <hr class="border-gray-300" />
           <li class="pl-4 lg:pl-0">
             <a
-              href="../index.html#contact"
+              href="../../index.html#contact"
               id="contact-menu"
-              class="uppercase text-color-primary"
+              class="uppercase text-gray-400 lg:text-gray-800"
               >contact</a
             >
           </li>
