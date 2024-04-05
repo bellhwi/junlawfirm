@@ -102,6 +102,22 @@ function togglePracticeAreasMenu() {
   })
 }
 
+function preventRightClick() {
+  document.addEventListener(
+    'contextmenu',
+    function (e) {
+      e.preventDefault()
+    },
+    false
+  )
+}
+
+function preventCopy() {
+  document.addEventListener('copy', function (e) {
+    e.preventDefault()
+  })
+}
+
 function initAllEventListeners() {
   // Go to top button
   if (topBtn !== null) {
@@ -115,6 +131,10 @@ function initAllEventListeners() {
   handleSideNavbar()
   // Toggle practice areas menu
   togglePracticeAreasMenu()
+  // Prevent right click
+  preventRightClick()
+  // Prevent copy
+  preventCopy()
 }
 
 initAllEventListeners()
