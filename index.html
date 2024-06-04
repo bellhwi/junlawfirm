@@ -32,6 +32,10 @@
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Lite Youtube -->
+    <link rel="stylesheet" href="lite-yt/lite-yt-embed.css" />
+    <script src="lite-yt/lite-yt-embed.js"></script>
   </head>
 
   <body>
@@ -50,7 +54,7 @@
         <!-- Logo -->
         <div class="logo mx-auto lg:mx-0">
           <a href="index.html">
-            <img alt="logo" src="../../images/logo.png" />
+            <img alt="logo" src="/images/logo.webp" width="256" height="120" />
           </a>
         </div>
         <!-- Nav list -->
@@ -209,9 +213,17 @@
           </div>
           <div class="swiper-slide relative h-screen px-8 py-4 flex flex-col">
             <img
-              src="images/graduation.jpg"
+              src="images/graduation.webp"
+              srcset="
+                images/graduation-480.webp  480w,
+                images/graduation-768.webp  768w,
+                images/graduation.webp     1417w
+              "
+              sizes="100vw"
               alt="a graduation cap"
               class="bg-overlay-original"
+              width="1417"
+              height="1580"
             />
             <div
               class="container mx-auto grow flex justify-center items-start flex-col"
@@ -248,9 +260,18 @@
           </div>
           <div class="swiper-slide relative h-screen px-8 py-4 flex flex-col">
             <img
-              src="images/wedding-couple.jpg"
+              src="images/wedding-couple.webp"
+              srcset="
+                images/wedding-couple-480.webp   480w,
+                images/wedding-couple-768.webp   768w,
+                images/wedding-couple-1024.webp 1024w,
+                images/wedding-couple.webp      1920w
+              "
+              sizes="100vw"
               alt="a wedding couple"
               class="bg-overlay-original"
+              width="1920"
+              height="1280"
             />
             <div
               class="container mx-auto grow flex justify-center items-start flex-col"
@@ -428,16 +449,15 @@
             <!-- Blog card-->
             <div class="bg-gray-100 h-full">
               <div class="relative shadow bg-white h-full">
-                <iframe
-                  width="560"
-                  height="315"
-                  src="https://www.youtube.com/embed/W5dHV4p-qpg?si=V1p5dOPmQTeQIZDz"
-                  title="YouTube video player"
-                  frameborder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                  allowfullscreen
+                <lite-youtube
                   class="h-96 w-full"
-                ></iframe>
+                  videoid="W5dHV4p-qpg"
+                  style="
+                    background-image: url('/images/niw-video-thumbnail.webp');
+                  "
+                >
+                </lite-youtube>
+
                 <div class="p-8 relative">
                   <h4 class="font-bold text-3xl mb-2">
                     National Interest Waiver
@@ -462,9 +482,11 @@
             <div class="bg-gray-100 h-full">
               <div class="relative shadow bg-white h-full">
                 <img
-                  src="images/wedding.jpg"
+                  src="images/wedding.webp"
                   alt="wedding ceremony"
                   class="w-full h-96 object-cover"
+                  width="640"
+                  height="427"
                 />
                 <div class="p-8">
                   <h4 class="font-bold text-3xl mb-2">
@@ -940,7 +962,7 @@
     >
       <div class="logo mx-auto lg:mx-0">
         <a href="index.html">
-          <img alt="logo" src="images/logo.png" />
+          <img alt="logo" src="images/logo.webp" width="256" height="120" />
         </a>
       </div>
       <!-- Social Links & Copyright-->

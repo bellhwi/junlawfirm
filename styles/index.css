@@ -18,6 +18,10 @@
   --text-color-secondary: #adb5bd;
 }
 
+body {
+  font-display: swap;
+}
+
 a {
   text-decoration: none;
 }
@@ -51,7 +55,7 @@ a {
 }
 
 .bg-hero {
-  background-image: url('../images/about-landscape-cropped.jpg');
+  background-image: url('../images/about-landscape-cropped.webp');
   background-repeat: no-repeat;
   background-size: cover;
   position: absolute;
