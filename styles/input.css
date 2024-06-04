@@ -1,0 +1,218 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer components {
+  /* added to tailwind.config.js */
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+:root {
+  --bg-color-primary: #343a40;
+  --bg-color-secondary: #adb5bd;
+  --text-color-primary: #343a40;
+  --text-color-secondary: #adb5bd;
+}
+
+body {
+  font-display: swap;
+}
+
+a {
+  text-decoration: none;
+}
+
+.blog-thumbnail {
+  aspect-ratio: 3/2;
+  object-fit: cover;
+}
+
+.list-lower-alpha {
+  list-style-type: lower-alpha;
+}
+
+.text-color-primary {
+  color: var(--text-color-primary);
+}
+.text-color-secondary {
+  color: var(--text-color-secondary);
+}
+
+.bg-color-primary {
+  background-color: var(--bg-color-primary) !important;
+}
+
+.bg-color-secondary {
+  background-color: var(--bg-color-secondary);
+}
+
+.border-primary {
+  border-color: var(--bg-color-primary);
+}
+
+.bg-hero {
+  background-image: url('../images/about-landscape-cropped.webp');
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -10;
+  height: 100%;
+  width: 100%;
+}
+
+.bg-overlay-original {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -10;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.bg-overlay {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -10;
+  filter: brightness(50%);
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.bg-overlay-dark {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -10;
+  filter: brightness(30%);
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.logo {
+  max-width: 12rem;
+  min-width: 7rem;
+}
+
+.vl {
+  border-color: black;
+  border-left: 8px solid;
+}
+
+.nav {
+  transform: translateX(-11rem);
+  transition: all 0.4s;
+}
+
+.nav.show {
+  transform: translateX(0);
+}
+
+.nav-overlay {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 10;
+}
+
+.nav-dynamic {
+  transform: translateY(-6rem);
+  transition: all 0.4s;
+}
+
+.nav-dynamic.show {
+  transform: translateY(0);
+}
+
+.swiper-pagination-bullet {
+  background-color: white !important;
+}
+
+.nav-close:hover {
+  background-color: white;
+  color: var(--bg-color-primary);
+  transition: all 0.4s;
+}
+
+.practice-list a:hover {
+  color: white;
+}
+
+.top-btn {
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.4s;
+}
+
+.top-btn.show {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.fa-brands:hover,
+.powered-by:hover {
+  color: var(--text-color-primary);
+}
+
+.heading-anim {
+  opacity: 0;
+  transform: translateX(50px);
+  animation: fadeInRight 1s forwards;
+}
+.desc-anim {
+  opacity: 0;
+  transform: translateX(50px);
+  animation: fadeInRight 1s forwards;
+  transition-delay: 500ms;
+}
+.cta-anim {
+  opacity: 0;
+  transform: translateX(50px);
+  animation: fadeInRight 1s forwards;
+  transition-delay: 1000ms;
+}
+.arrow-anim {
+  opacity: 1;
+  animation: fadeIn 1s ease-in;
+  transition-delay: 1000ms;
+}
+
+.bg-footer {
+  background-color: #4b3d1f;
+}
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
