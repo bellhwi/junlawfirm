@@ -1,4 +1,5 @@
 # .gitignore file
+.vscode/
 
 # Ignore all .log files
 *.log
