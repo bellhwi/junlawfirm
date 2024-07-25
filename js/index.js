@@ -134,7 +134,7 @@ function initAllEventListeners() {
   // Prevent right click
   preventRightClick()
   // Prevent copy
-  preventCopy()
+  // preventCopy()
 }
 
 initAllEventListeners()
