@@ -44,7 +44,7 @@
   <body>
     <main>
       <nav
-        class="z-50 py-2 px-8 container mx-auto flex items-center justify-center lg:justify-between lg:px-0"
+        class="z-50 absolute left-0 top-0 right-0 py-2 px-8 container mx-auto flex items-center justify-center lg:justify-between lg:px-0"
       >
         <!-- Navbar on overlay in mobile screen -->
         <div class="nav-overlay hidden" id="nav-overlay"></div>
@@ -189,171 +189,292 @@
           </li>
         </ul>
       </nav>
-
-      <!-- Practice -->
-      <section
-        class="relative mx-auto flex rounded mt-16 container flex-col lg:flex-row lg:space-x-16"
-        id="practice-container"
-      >
-        <div class="px-4 w-full mx-auto lg:w-9/12 lg:px-0">
-          <!-- Heading -->
-          <h1 class="text-3xl font-bold md:text-4xl lg:text-5xl">
+      <section class="relative py-44">
+        <img
+          src="../../images/practice/parole-in-place.png"
+          alt="hero image"
+          class="bg-overlay-original"
+          width="1920"
+          height="1280"
+        />
+        <!-- Main landing -->
+        <div class="container mx-auto px-8 lg:px-0">
+          <h1 class="tracking-wide font-bold text-4xl lg:text-7xl">
             Parole in Place: Undocumented Spouses of U.S. citizens
           </h1>
-          <hr class="text-gray-600 mt-5 w-full" />
-          <!-- Content -->
-          <div
-            class="text-left my-8 leading-relaxed md:leading-loose text-gray-800"
-          >
-            <div class="max-w-full space-y-8">
-              <div>
-                On June 18, the Department of Homeland Security (DHS) announced
-                actions to promote family unity in the immigration process. This
-                announcement is consistent with the Biden-Harris
-                administration’s commitment to keep families together. DHS is
-                establishing a process to consider, on a case-by-case basis,
-                requests for parole in place from certain noncitizen spouses of
-                U.S. citizens who have been in the U.S. for at least a decade.
-                If parole is granted, noncitizens who are eligible to apply for
-                lawful permanent residence based on their marriage to a U.S.
-                citizen will be able to do so without having to leave the United
-                States.
-              </div>
-              <div class="flex pt-8">
-                <div class="vl"></div>
-                <h3 class="text-xl font-bold p-2 ml-2">
-                  Eligibility for Parole in Place
-                </h3>
-              </div>
-              <ul class="list-decimal pl-8 space-y-4">
-                <li>
-                  <span class="font-bold">Continuous Presence</span>: Be present
-                  in the United States without admission or parole; Have been
-                  continuously present in the United States for at least 10
-                  years as of June 17, 2024;
-                </li>
-                <li>
-                  <span class="font-bold">Valid Marriage</span>: Have a legally
-                  valid marriage to a U.S. citizen as of June 17, 2024;
-                </li>
-                <li>
-                  <span class="font-bold">No Criminal History</span>:Not have
-                  any disqualifying criminal history or otherwise constitute a
-                  threat to national security or public safety;
-                </li>
-                <li>
-                  <span class="font-bold">Favorable Discretion</span>: Otherwise
-                  merit a favorable exercise of discretion.
-                </li>
-              </ul>
-              <div class="flex pt-8">
-                <div class="vl"></div>
-                <h3 class="text-xl font-bold p-2 ml-2">
-                  Evidence of Eligibility
-                </h3>
-              </div>
-              <ul class="list-disc pl-8 space-y-4">
-                <li>
-                  <span class="font-bold">Marriage</span>: Evidence of a legally
-                  valid marriage to a U.S. citizen as of June 17, 2024, such as
-                  a marriage certificate;
-                </li>
-                <li>
-                  <span class="font-bold">Identity</span>: Documentation of
-                  proof of identity, including expired documents may include:
-                  Valid state or country driver’s license or identification;
-                  Birth certificate with photo identification; Valid passport;
-                  or Any government issued document bearing the requestor’s
-                  name, date of birth, and photo.
-                </li>
-                <li>
-                  <span class="font-bold">Spouse's Citizenship</span>: Evidence
-                  of your spouse’s U.S. citizenship, such as a passport, birth
-                  certificate or Certificate of Naturalization;
-                </li>
-              </ul>
-              <div class="flex pt-8">
-                <div class="vl"></div>
-                <h3 class="text-xl font-bold p-2 ml-2">
-                  Documentation of Continuous Presence
-                </h3>
-              </div>
-              <ul class="list-disc pl-8 space-y-8">
-                <li>
-                  <span class="font-bold">Rent Receipts</span>: Documentation to
-                  establish your continued presence in the United States for at
-                  least 10 years, as of June 17, 2024. While more information
-                  will be made available in the forthcoming Federal Register
-                  Notice and subsequent FAQs, examples of documentation could
-                  include copies of: Rent receipts or utility bills;
-                </li>
-                <li>
-                  <span class="font-bold">School Records</span>: School records
-                  (letters, report cards, etc.);
-                </li>
-                <li>
-                  <span class="font-bold">Medical Records</span>: Hospital or
-                  medical records;
-                </li>
-                <li>
-                  <span class="font-bold">Religious Records</span>: Attestations
-                  to your residence by religious entities, unions, or other
-                  organizations, identifying you by name; Official records from
-                  a religious entity confirming participation in a religious
-                  ceremony;
-                </li>
-              </ul>
-              <div class="flex pt-8">
-                <div class="vl"></div>
-                <h3 class="text-xl font-bold p-2 ml-2">
-                  Additional Documentation
-                </h3>
-              </div>
-              <ul class="list-disc pl-8 space-y-8">
-                <li>
-                  <span class="font-bold">Financial Records</span>: Money order
-                  receipts for money sent into or out of the United States;
-                  Dated bank transactions;
-                </li>
-                <li>
-                  <span class="font-bold">Vehicle Records</span>: Automobile
-                  license receipts, title, or registration;
-                </li>
-                <li>
-                  <span class="font-bold">Property Records</span>: Deeds,
-                  mortgages, or rental agreement contracts; Insurance policies;
-                  or Tax returns or tax receipts.
-                </li>
-                <li>
-                  <span class="font-bold">Children's Records</span>: For
-                  noncitizen children of requestors, evidence of eligibility
-                  could include: Evidence of the child’s relationship to the
-                  noncitizen parent, such as a birth certificate or adoption
-                  decree; Evidence of the noncitizen parent’s legally valid
-                  marriage to a U.S. citizen as of June 17, 2024, such as a
-                  marriage certificate; and Evidence of the child’s presence in
-                  the United States as of June 17, 2024.
-                </li>
-              </ul>
+          <p class="my-8 md:text-lg text-gray-800">
+            On June 18, the Department of Homeland Security (DHS) announced
+            actions to promote family unity in the immigration process. This
+            announcement is consistent with the Biden-Harris administration’s
+            commitment to keep families together. DHS is establishing a process
+            to consider, on a case-by-case basis, requests for parole in place
+            from certain noncitizen spouses of U.S. citizens who have been in
+            the U.S. for at least a decade. If parole is granted, noncitizens
+            who are eligible to apply for lawful permanent residence based on
+            their marriage to a U.S. citizen will be able to do so without
+            having to leave the United States.
+          </p>
+          <div class="flex">
+            <img
+              src="../../images/practice/hongmin-jun.jpg"
+              alt="hongmin jun"
+              width="96"
+              height="96"
+              class="rounded-full w-12 h-12"
+            />
+            <div class="ml-2">
+              <p class="font-bold text-lg">by Hong-min Jun</p>
+              <p class="text-gray-800">Last edited Jul 25, 2024</p>
             </div>
           </div>
         </div>
-        <!-- Related Articles -->
-        <div
-          class="px-4 w-full h-fit mt-16 lg:mt-0 lg:w-3/12 lg:block 2xl:mr-16 2xl:w-4/12 lg:px-0 pb-8 lg:pb-0"
-        >
-          <h3 class="uppercase text-center font-bold lg:text-left">
-            related articles
-          </h3>
-          <ul
-            class="mt-8 space-y-4 text-gray-700 font-normal text-sm 2xl:text-base"
-          >
-            <li class="text-gray-800 font-bold">
-              <a href="#"
-                >Parole in Place: Undocumented Spouses of U.S. citizens
-              </a>
-            </li>
-          </ul>
+      </section>
+
+      <!-- Practice -->
+      <section id="practice-container">
+        <!-- Content -->
+        <div class="text-left leading-relaxed md:leading-loose text-gray-800">
+          <div class="max-w-full">
+            <!-- Section -->
+            <div class="bg-gray-100">
+              <div class="container mx-auto py-16 px-4 lg:px-0">
+                <h2
+                  class="text-3xl font-bold mr-auto md:text-4xl lg:text-5xl mb-8 text-center md:text-left"
+                >
+                  Eligibility for Parole in Place
+                </h2>
+                <div>
+                  <div class="flex flex-col gap-8 md:flex-row">
+                    <div class="relative flex-1 shadow py-8 px-16">
+                      <div
+                        class="absolute left-0 top-0 bg-gray-200 w-12 h-12 flex items-center justify-center text-xl font-semibold"
+                      >
+                        1
+                      </div>
+                      <p
+                        class="text-xl font-semibold md:text-2xl lg:text-3xl mb-4"
+                      >
+                        Continuous Presence
+                      </p>
+                      <p>
+                        Be present in the United States without admission or
+                        parole; Have been continuously present in the United
+                        States for at least 10 years as of June 17, 2024;
+                      </p>
+                    </div>
+                    <div class="relative flex-1 shadow py-8 px-16">
+                      <div
+                        class="absolute left-0 top-0 bg-gray-200 w-12 h-12 flex items-center justify-center text-xl font-semibold"
+                      >
+                        2
+                      </div>
+                      <p
+                        class="text-xl font-semibold md:text-2xl lg:text-3xl mb-4"
+                      >
+                        Valid Marriage
+                      </p>
+                      <p>
+                        Have a legally valid marriage to a U.S. citizen as of
+                        June 17, 2024;
+                      </p>
+                    </div>
+                    <div class="relative flex-1 shadow py-8 px-16">
+                      <div
+                        class="absolute left-0 top-0 bg-gray-200 w-12 h-12 flex items-center justify-center text-xl font-semibold"
+                      >
+                        3
+                      </div>
+                      <p
+                        class="text-xl font-semibold md:text-2xl lg:text-3xl mb-4"
+                      >
+                        No Criminal History
+                      </p>
+                      <p>
+                        Not have any disqualifying criminal history or otherwise
+                        constitute a threat to national security or public
+                        safety;
+                      </p>
+                    </div>
+                  </div>
+                  <div class="relative flex-1 shadow py-8 px-16 mt-8">
+                    <div
+                      class="absolute left-0 top-0 bg-gray-200 w-12 h-12 flex items-center justify-center text-xl font-semibold"
+                    >
+                      4
+                    </div>
+                    <p
+                      class="text-xl font-semibold md:text-2xl lg:text-3xl mb-4"
+                    >
+                      Favorable Discretion
+                    </p>
+                    <p>Otherwise merit a favorable exercise of discretion.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Section -->
+            <div>
+              <div class="container mx-auto py-16 px-4 lg:px-0">
+                <h2
+                  class="text-3xl font-bold mr-auto md:text-4xl lg:text-5xl mb-8 text-center md:text-left"
+                >
+                  Evidence of Eligibility
+                </h2>
+                <div>
+                  <div class="flex flex-col gap-8 md:flex-row">
+                    <div class="relative flex-1 shadow p-8">
+                      <p
+                        class="text-xl font-semibold md:text-2xl lg:text-3xl mb-4"
+                      >
+                        Marriage
+                      </p>
+                      <p>
+                        Evidence of a legally valid marriage to a U.S. citizen
+                        as of June 17, 2024, such as a marriage certificate;
+                      </p>
+                    </div>
+                    <div class="relative flex-1 shadow p-8">
+                      <p
+                        class="text-xl font-semibold md:text-2xl lg:text-3xl mb-4"
+                      >
+                        Identity
+                      </p>
+                      <p>
+                        Documentation of proof of identity, including expired
+                        documents may include: Valid state or country driver’s
+                        license or identification; Birth certificate with photo
+                        identification; Valid passport; or Any government issued
+                        document bearing the requestor’s name, date of birth,
+                        and photo.
+                      </p>
+                    </div>
+                    <div class="relative flex-1 shadow p-8">
+                      <p
+                        class="text-xl font-semibold md:text-2xl lg:text-3xl mb-4"
+                      >
+                        Spouse's Citizenship
+                      </p>
+                      <p>
+                        Evidence of your spouse’s U.S. citizenship, such as a
+                        passport, birth certificate or Certificate of
+                        Naturalization;
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Section -->
+            <div class="bg-gray-100">
+              <div class="container mx-auto py-16 px-4 lg:px-0">
+                <h2
+                  class="text-3xl font-bold mr-auto md:text-4xl lg:text-5xl mb-8 text-center md:text-left"
+                >
+                  Documentation of Continuous Presence
+                </h2>
+                <div>
+                  <div class="flex flex-col gap-8 md:flex-row">
+                    <div class="relative flex-1 shadow p-8">
+                      <p
+                        class="text-xl font-semibold md:text-2xl lg:text-3xl mb-4"
+                      >
+                        Rent Receipts
+                      </p>
+                      <p>
+                        Documentation to establish your continued presence in
+                        the United States for at least 10 years, as of June 17,
+                        2024. While more information will be made available in
+                        the forthcoming Federal Register Notice and subsequent
+                        FAQs, examples of documentation could include copies of:
+                        Rent receipts or utility bills;
+                      </p>
+                    </div>
+                    <div class="relative flex-1 shadow p-8">
+                      <p
+                        class="text-xl font-semibold md:text-2xl lg:text-3xl mb-4"
+                      >
+                        School Records
+                      </p>
+                      <p>School records (letters, report cards, etc.);</p>
+                    </div>
+                    <div class="relative flex-1 shadow p-8">
+                      <p
+                        class="text-xl font-semibold md:text-2xl lg:text-3xl mb-4"
+                      >
+                        Medical Records
+                      </p>
+                      <p>Hospital or medical records;</p>
+                    </div>
+                  </div>
+                  <div class="relative flex-1 shadow p-8 mt-8">
+                    <p
+                      class="text-xl font-semibold md:text-2xl lg:text-3xl mb-4"
+                    >
+                      Religious Records
+                    </p>
+                    <p>
+                      Attestations to your residence by religious entities,
+                      unions, or other organizations, identifying you by name;
+                      Official records from a religious entity confirming
+                      participation in a religious ceremony;
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Section -->
+            <div>
+              <div class="container mx-auto py-16 px-4 lg:px-0">
+                <h2
+                  class="text-3xl font-bold mr-auto md:text-4xl lg:text-5xl mb-8 text-center md:text-left"
+                >
+                  Additional Documentation
+                </h2>
+                <div>
+                  <div class="flex flex-col gap-8 md:flex-row">
+                    <div class="relative flex-1 shadow p-8">
+                      <p
+                        class="text-xl font-semibold md:text-2xl lg:text-3xl mb-4"
+                      >
+                        Financial Records
+                      </p>
+                      <p>
+                        Money order receipts for money sent into or out of the
+                        United States; Dated bank transactions;
+                      </p>
+                    </div>
+                    <div class="relative flex-1 shadow p-8">
+                      <p
+                        class="text-xl font-semibold md:text-2xl lg:text-3xl mb-4"
+                      >
+                        Vehicle Records
+                      </p>
+                      <p>
+                        Automobile license receipts, title, or registration;
+                      </p>
+                    </div>
+                    <div class="relative flex-1 shadow p-8">
+                      <p
+                        class="text-xl font-semibold md:text-2xl lg:text-3xl mb-4"
+                      >
+                        Property Records
+                      </p>
+                      <p>
+                        Deeds, mortgages, or rental agreement contracts;
+                        Insurance policies; or Tax returns or tax receipts.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="relative flex-1 shadow p-8 mt-8">
+                  <p class="text-xl font-semibold md:text-2xl lg:text-3xl mb-4">
+                    Favorable Discretion
+                  </p>
+                  <p>Otherwise merit a favorable exercise of discretion.</p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
     </main>
