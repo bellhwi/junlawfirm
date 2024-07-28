@@ -139,3 +139,28 @@ function initAllEventListeners() {
 
 initAllEventListeners()
 currentYear.innerText = getCurrentYear
+
+// Improved pop-up modal handling
+document.addEventListener('DOMContentLoaded', () => {
+  const modal = document.getElementById('popupModal')
+  // Check if the 'popupShown' flag is set in sessionStorage
+  if (sessionStorage.getItem('popupShown') !== 'true') {
+    // Show the pop-up
+    modal.style.display = 'flex'
+  } else {
+    // Hide the pop-up
+    modal.style.display = 'none'
+  }
+
+  // Attach event listener to modal close button
+  document.getElementById('closeModalButton').addEventListener('click', () => {
+    closeModal(modal)
+  })
+})
+
+// Function to close the modal and set the session flag
+function closeModal(modal) {
+  modal.style.display = 'none'
+  // Set the 'popupShown' flag in sessionStorage
+  sessionStorage.setItem('popupShown', 'true')
+}

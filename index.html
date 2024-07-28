@@ -25,7 +25,8 @@
       "
     />
     <title>Law Office of Hong-min Jun</title>
-
+    <!-- Preload -->
+    <link rel="preload" href="images/family.webp" as="image" />
     <!-- CSS Files -->
     <link
       rel="stylesheet"
@@ -1069,6 +1070,42 @@
         <i class="fa-solid fa-phone text-gray-100 text-xl"></i>
       </div>
     </a>
+
+    <!-- Pop-up screen at the center of the page -->
+    <div
+      class="fixed inset-0 flex items-center justify-center z-50 px-4 max-w-md mx-auto"
+      id="popupModal"
+    >
+      <div class="bg-gray-300 rounded shadow-lg">
+        <img
+          src="images/family.webp"
+          width="640"
+          height="427"
+          alt="family"
+          class="w-full"
+        />
+        <div class="p-8">
+          <h2 class="text-2xl font-bold mb-2">
+            Parole in Place Program : Undocumented Spouses of US Citizens
+          </h2>
+          <p class="my-8">Applications are open in August 19, 2024</p>
+          <div class="mx-auto">
+            <a
+              href="practices/parole-in-place/parole-in-place-undocumented-spouses-of-u-s-citizens.html"
+              class="inline-block uppercase text-xs md:text-sm p-4 text-white tracking-wider font-semibold bg-color-primary"
+              >Find more details
+            </a>
+            <button
+              class="inline-block uppercase ml-8 p-2 text-xs md:text-sm text-black tracking-wider font-semibold"
+              onclick="closeModal()"
+              id="closeModalButton"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
     <script src="js/index.js"></script>
     <script src="js/swiper.js"></script>
   </body>
