@@ -143,6 +143,7 @@ currentYear.innerText = getCurrentYear
 // Improved pop-up modal handling
 document.addEventListener('DOMContentLoaded', () => {
   const modal = document.getElementById('popupModal')
+  if (!modal) return
   // Check if the 'popupShown' flag is set in sessionStorage
   if (sessionStorage.getItem('popupShown') !== 'true') {
     // Show the pop-up
