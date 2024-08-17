@@ -138,7 +138,9 @@ function initAllEventListeners() {
 }
 
 initAllEventListeners()
-currentYear.innerText = getCurrentYear
+if (currentYear !== null) {
+  currentYear.innerText = getCurrentYear
+}
 
 // Improved pop-up modal handling
 document.addEventListener('DOMContentLoaded', () => {
