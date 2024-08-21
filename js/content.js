@@ -28,6 +28,7 @@ document.addEventListener('DOMContentLoaded', () => {
       'List of Documents that are needed for NIW application',
       'There is No Disadvantage for Social Science Majors When Applying for NIW!',
       'NIW and STEM Majors',
+      'Business Plan and its evidentiary weight',
     ],
     '/practices/marriage-green-card': [
       'Who can be a Sponsor for marriage Green Card?',
