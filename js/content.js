@@ -39,6 +39,7 @@ document.addEventListener('DOMContentLoaded', () => {
       'Same Sex Marriage',
       'Waiver of Inadmissibility',
       'K Visa Fiance Visa',
+      'Green Card Application Through Marriage and Estate Planning Featuring Prenuptial Agreement',
     ],
     '/practices/asylum-application-and-defense-of-deportation': [
       'Asylum',
@@ -47,6 +48,7 @@ document.addEventListener('DOMContentLoaded', () => {
     '/practices/wills-and-trusts': [
       'Importance of having a Will prepared for an Immigrant',
       'Understanding the Importance of Tenancy by the Entirety in Indiana for Homeowners',
+      'A Comprehensive Approach: Immigration Lawyer Supporting Immigrants Beyond Immigration Law',
     ],
     '/practices/parole-in-place': [
       'Parole in Place: Undocumented Spouses of U.S. citizens',
@@ -97,5 +99,46 @@ document.addEventListener('DOMContentLoaded', () => {
         parentContainer.appendChild(hr)
       }
     })
+  }
+
+  // Define the headings for the case-study directory
+  const caseStudyHeadings = [
+    'Experienced Immigration Attorney for Indiana and Surrounding States Key Lessons from a National Interest Waiver Appeal',
+    'Experienced Immigration Attorney in Indiana A Lesson in National Interest Waiver Case Dismissals',
+    'Immigration Attorney in Indiana Insights on a National Interest Waiver Appeal for Forensic Accounting Services',
+    'Immigration Attorney in Indiana National Interest Waiver (NIW) Denial Based on Exceptional Ability Without an Advanced Degree',
+  ]
+
+  // Check if the current directory is the case-study directory
+  if (parentDirectory === '/practices/national-interest-waiver') {
+    // Get the parent container where the <li> elements will be appended
+    const parentContainer = document.getElementById('case-study')
+
+    // Check if the parent container exists
+    if (parentContainer) {
+      // Loop through the caseStudyHeadings array
+      caseStudyHeadings.forEach((heading, index) => {
+        // Create a new <li> element
+        const li = document.createElement('li')
+
+        // Create a new <a> element
+        const a = document.createElement('a')
+        a.href = `${toKebabCase(heading)}.html`
+        a.textContent = heading
+
+        // Append the <a> element to the <li>
+        li.appendChild(a)
+
+        // Append the <li> element to the parent container
+        parentContainer.appendChild(li)
+
+        // Append the <hr> element if it's not the last item
+        if (index < caseStudyHeadings.length - 1) {
+          const hr = document.createElement('hr')
+          hr.className = 'border-gray-300'
+          parentContainer.appendChild(hr)
+        }
+      })
+    }
   }
 })
