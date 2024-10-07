@@ -30,6 +30,7 @@ document.addEventListener('DOMContentLoaded', () => {
       'NIW and STEM Majors',
       'Business Plan and its evidentiary weight',
       'Applying for NIW While Unemployed: Strategies for Success',
+      'Evidentiary Weights of Recommendation Letter for NIW Application',
     ],
     '/practices/marriage-green-card': [
       'Who can be a Sponsor for marriage Green Card?',
@@ -109,6 +110,8 @@ document.addEventListener('DOMContentLoaded', () => {
     'Immigration Attorney in Indiana Insights on a National Interest Waiver Appeal for Forensic Accounting Services',
     'Immigration Attorney in Indiana National Interest Waiver (NIW) Denial Based on Exceptional Ability Without an Advanced Degree',
     'NIW Proposed Endeavor Medical Doctor National Importance',
+    'NIW Success Story - Architect',
+    'Why Was This Accountants NIW denied',
   ]
 
   // Check if the current directory is the case-study directory
