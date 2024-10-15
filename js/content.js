@@ -31,6 +31,7 @@ document.addEventListener('DOMContentLoaded', () => {
       'Business Plan and its evidentiary weight',
       'Applying for NIW While Unemployed: Strategies for Success',
       'Evidentiary Weights of Recommendation Letter for NIW Application',
+      'NIW application and F1 status',
     ],
     '/practices/marriage-green-card': [
       'Who can be a Sponsor for marriage Green Card?',
