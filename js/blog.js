@@ -43,7 +43,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
       const elements = Array.from(doc.body.querySelectorAll('div, p')).filter(
         // 모든 div 및 p 요소를 배열로 변환하고 필터링
-        (el) => el.childNodes.length === 1 && el.textContent.length > 200 // 자식 요소가 없고 텍스트 길이가 100자 이상인 요소만 선택
+        (el) => el.textContent.length > 200 // 자식 요소가 없고 텍스트 길이가 100자 이상인 요소만 선택
       )
 
       if (elements.length > 0) {

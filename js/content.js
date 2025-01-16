@@ -6,17 +6,13 @@ document.addEventListener('DOMContentLoaded', () => {
       .replace(/^-+|-+$/g, '') // Remove leading and trailing hyphens
   }
 
-  // Get the current heading element
   const currentHeadingElement = document.getElementById('current-heading')
-
-  // Check if the current heading element exists
-  if (!currentHeadingElement) {
-    return
-  }
+  if (!currentHeadingElement) return
 
   const currentHeading = currentHeadingElement.innerText
+  const currentPath = window.location.pathname
+  const parentDirectory = currentPath.substring(0, currentPath.lastIndexOf('/'))
 
-  // Define the headings for each directory
   const headingsByDirectory = {
     '/practices/national-interest-waiver': [
       'What is National Interest Waiver(NIW)?',
@@ -53,58 +49,22 @@ document.addEventListener('DOMContentLoaded', () => {
       'Understanding the Importance of Tenancy by the Entirety in Indiana for Homeowners',
       'A Comprehensive Approach: Immigration Lawyer Supporting Immigrants Beyond Immigration Law',
     ],
-    '/practices/parole-in-place': [
-      'Parole in Place: Undocumented Spouses of U.S. citizens',
-      'Questions related to potential beneficiaries',
-      'Application Process',
+    '/practices/security-litigation': [
+      'Facing Disputes With Financial Institutions?',
+      'Identifying a Tort Claim Against Brokerage Firms, Financial Advisors, and Financial Institutions',
+      'Understanding Churning: Its Impact on Your Investment and How to Protect Yourself',
+      'Fiduciary Duty in the Financial Industry',
+      'What is FINRA?',
+      'Calculating Damages',
+      'Understanding FINRA Rules: Rule 2111 (Suitability) and Rule 2020',
+      'Community Suitability Issues and Their Impact on Immigrants',
+      'Elder Abuse in Financial Services: Understanding FINRA Rule 2111 and Suitability Issues',
+      'Dealing With a Financial Institute For The Mismanagement of Your Funds, Saving and Other Resources',
+      'Legal Standards in Indiana for Tortious Acts and Damages',
+      'Our Attorneys',
     ],
   }
 
-  // Get the current URL path
-  const currentPath = window.location.pathname
-
-  // Extract the parent directory from the path
-  const parentDirectory = currentPath.substring(0, currentPath.lastIndexOf('/'))
-
-  // Get the headings for the current directory
-  const headings = headingsByDirectory[parentDirectory] || []
-
-  // Get the parent container where the <li> elements will be appended
-  const parentContainer = document.getElementById('related-articles')
-
-  // Check if the parent container exists and if the parent directory is in the headingsByDirectory object
-  if (parentContainer && headings.length > 0) {
-    // Filter out the current heading from the headings array
-    const filteredHeadings = headings.filter(
-      (heading) => heading !== currentHeading
-    )
-
-    // Loop through the filtered headings array
-    filteredHeadings.forEach((heading, index) => {
-      // Create a new <li> element
-      const li = document.createElement('li')
-
-      // Create a new <a> element
-      const a = document.createElement('a')
-      a.href = `${toKebabCase(heading)}.html`
-      a.textContent = heading
-
-      // Append the <a> element to the <li>
-      li.appendChild(a)
-
-      // Append the <li> element to the parent container
-      parentContainer.appendChild(li)
-
-      // Append the <hr> element if it's not the last item
-      if (index < filteredHeadings.length - 1) {
-        const hr = document.createElement('hr')
-        hr.className = 'border-gray-300'
-        parentContainer.appendChild(hr)
-      }
-    })
-  }
-
-  // Define the headings for the case-study directory
   const caseStudyHeadings = [
     'Experienced Immigration Attorney for Indiana and Surrounding States Key Lessons from a National Interest Waiver Appeal',
     'Experienced Immigration Attorney in Indiana A Lesson in National Interest Waiver Case Dismissals',
@@ -113,77 +73,45 @@ document.addEventListener('DOMContentLoaded', () => {
     'NIW Proposed Endeavor Medical Doctor National Importance',
     'NIW Success Story - Architect',
     'Why Was This Accountants NIW denied',
+    'NIW Success Story: Pakistani Civil Engineer Paving the Way for Seismic Safety in the U.S.',
+    'NIW Success Story: Mr. Lee – A Battery Recycling Innovator Advancing Renewable Energy in the U.S.',
   ]
 
-  // Check if the current directory is the case-study directory
-  if (parentDirectory === '/practices/national-interest-waiver') {
-    // Get the parent container where the <li> elements will be appended
-    const parentContainer = document.getElementById('case-study')
-
-    // Check if the parent container exists
-    if (parentContainer) {
-      // Loop through the caseStudyHeadings array
-      caseStudyHeadings.forEach((heading, index) => {
-        // Create a new <li> element
-        const li = document.createElement('li')
-
-        // Create a new <a> element
-        const a = document.createElement('a')
-        a.href = `${toKebabCase(heading)}.html`
-        a.textContent = heading
-
-        // Append the <a> element to the <li>
-        li.appendChild(a)
-
-        // Append the <li> element to the parent container
-        parentContainer.appendChild(li)
-
-        // Append the <hr> element if it's not the last item
-        if (index < caseStudyHeadings.length - 1) {
-          const hr = document.createElement('hr')
-          hr.className = 'border-gray-300'
-          parentContainer.appendChild(hr)
-        }
-      })
-    }
-  }
-
-  // Define the headings for the artists-and-niw directory
   const artistsAndNiwHeadings = [
     'Artists and NIW',
     'NIW for Artists Required for Higher Standard of Review',
   ]
 
-  // Check if the current directory is the artists-and-niw directory
+  const appendHeadings = (headings, containerId) => {
+    const parentContainer = document.getElementById(containerId)
+    if (!parentContainer) return
+
+    headings.forEach((heading, index) => {
+      const li = document.createElement('li')
+      const a = document.createElement('a')
+      a.href = `${toKebabCase(heading)}.html`
+      a.textContent = heading
+      li.appendChild(a)
+      parentContainer.appendChild(li)
+
+      if (index < headings.length - 1) {
+        const hr = document.createElement('hr')
+        hr.className = 'border-gray-300'
+        parentContainer.appendChild(hr)
+      }
+    })
+  }
+
+  const headings = headingsByDirectory[parentDirectory] || []
+  if (headings.length > 0) {
+    const filteredHeadings = headings.filter(
+      (heading) => heading !== currentHeading
+    )
+    appendHeadings(filteredHeadings, 'related-articles')
+  }
+
   if (parentDirectory === '/practices/national-interest-waiver') {
-    // Get the parent container where the <li> elements will be appended
-    const parentContainer = document.getElementById('artists-and-niw')
-
-    // Check if the parent container exists
-    if (parentContainer) {
-      // Loop through the artistsAndNiwHeadings array
-      artistsAndNiwHeadings.forEach((heading, index) => {
-        // Create a new <li> element
-        const li = document.createElement('li')
-
-        // Create a new <a> element
-        const a = document.createElement('a')
-        a.href = `${toKebabCase(heading)}.html`
-        a.textContent = heading
-
-        // Append the <a> element to the <li>
-        li.appendChild(a)
-
-        // Append the <li> element to the parent container
-        parentContainer.appendChild(li)
-
-        // Append the <hr> element if it's not the last item
-        if (index < artistsAndNiwHeadings.length - 1) {
-          const hr = document.createElement('hr')
-          hr.className = 'border-gray-300'
-          parentContainer.appendChild(hr)
-        }
-      })
-    }
+    appendHeadings(caseStudyHeadings, 'case-study')
+    appendHeadings(artistsAndNiwHeadings, 'artists-and-niw')
   }
 })
