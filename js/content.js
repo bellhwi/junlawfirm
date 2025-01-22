@@ -28,6 +28,7 @@ document.addEventListener('DOMContentLoaded', () => {
       'Applying for NIW While Unemployed: Strategies for Success',
       'Evidentiary Weights of Recommendation Letter for NIW Application',
       'NIW application and F1 status',
+      'Key Insights and Strategies for a Successful EB-2 NIW (National Interest Waiver) Application',
     ],
     '/practices/marriage-green-card': [
       'Who can be a Sponsor for marriage Green Card?',
