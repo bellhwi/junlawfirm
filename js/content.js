@@ -81,6 +81,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const artistsAndNiwHeadings = [
     'Artists and NIW',
     'NIW for Artists Required for Higher Standard of Review',
+    'Art as a National Asset: Crafting a Compelling NIW Case for Artists',
   ]
 
   const appendHeadings = (headings, containerId) => {
