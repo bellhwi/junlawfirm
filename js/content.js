@@ -49,6 +49,7 @@ document.addEventListener('DOMContentLoaded', () => {
       'Importance of having a Will prepared for an Immigrant',
       'Understanding the Importance of Tenancy by the Entirety in Indiana for Homeowners',
       'A Comprehensive Approach: Immigration Lawyer Supporting Immigrants Beyond Immigration Law',
+      'Practical Measures in Response to Trump’s Anti-Immigration Policies',
     ],
     '/practices/security-litigation': [
       'Facing Disputes With Financial Institutions?',
