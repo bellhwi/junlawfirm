@@ -623,7 +623,7 @@
         </div>
       </section>
 
-      <!--  Blog -->
+      <!-- Latest News Section -->
       <section class="bg-gray-100 py-16 px-8">
         <!-- Headings and text container -->
         <div class="container mx-auto">
@@ -632,111 +632,17 @@
             Latest News
           </h3>
 
-          <!-- Blog cards -->
+          <!-- Blog cards container -->
           <div
-            class="mt-8 grid grid-cols-1 gap-x-6 gap-y-8 md:gap-y-8 md:grid-cols-2 lg:grid-cols-4"
+            class="mt-8 grid grid-cols-1 gap-x-6 gap-y-8 md:gap-y-8 md:grid-cols-2 lg:grid-cols-4 latest-news-container"
           >
-            <!-- Blog card-->
-            <div class="bg-gray-100 h-full">
-              <div class="relative rounded shadow-lg bg-white h-full">
-                <div class="p-8 h-full flex flex-col justify-between">
-                  <div>
-                    <h4 class="text-2xl font-bold mb-2">
-                      Self Petition for L1 Visa of Sole Proprietorship
-                    </h4>
-                    <p class="text-gray-700 text-sm">October 24, 2023</p>
-                    <p class="text-gray-700 mt-4">
-                      The Policy Manual update affirms the existing guidance.
-                      The update distinguishes a sole proprietor...
-                    </p>
-                  </div>
-                  <a
-                    href="blogs/self-petition-for-l-1-visa-of-sole-proprietorship.html"
-                    rel="  noopener"
-                    class="mt-4 uppercase w-max text-color-primary inline-block underline font-semibold underline-offset-4 text-sm text-gray-700"
-                    >read more</a
-                  >
-                </div>
-              </div>
-            </div>
-            <!-- Blog card-->
-
-            <div class="bg-gray-100 h-full">
-              <div class="relative rounded shadow-lg bg-white h-full">
-                <div class="p-8 h-full flex flex-col justify-between">
-                  <div>
-                    <h4 class="text-2xl font-bold mb-2">
-                      L1 Visa – US Intra Company Transferee Visa
-                    </h4>
-                    <p class="text-gray-700 text-sm">August 17, 2023</p>
-                    <p class="text-gray-700 mt-4">
-                      Proving a qualifying relationship between a U.S. company
-                      and a foreign parent company is...
-                    </p>
-                  </div>
-
-                  <a
-                    href="blogs/l-1-visa-us-intra-company-transferee-visa.html#blog-container"
-                    rel="  noopener"
-                    class="mt-4 uppercase w-max text-color-primary inline-block underline font-semibold underline-offset-4 text-sm text-gray-700"
-                    >read more</a
-                  >
-                </div>
-              </div>
-            </div>
-            <!-- Blog card-->
-
-            <div class="bg-gray-100 h-full">
-              <div class="relative rounded shadow-lg bg-white h-full">
-                <div class="p-8 h-full flex flex-col justify-between">
-                  <div>
-                    <h4 class="text-2xl font-bold mb-2">
-                      Waiver of Inadmissibility : Extreme Hardship Standards
-                    </h4>
-                    <p class="text-gray-700 text-sm">July 13, 2023</p>
-                    <p class="text-gray-700 mt-4">
-                      The extreme hardship waiver, formally known as the
-                      “Provisional Unlawful Presence Waiver”...
-                    </p>
-                  </div>
-                  <a
-                    href="blogs/waiver-of-inadmissibility-extreme-hardship-standards.html"
-                    rel="  noopener"
-                    class="mt-4 uppercase w-max text-color-primary inline-block underline font-semibold underline-offset-4 text-sm text-gray-700"
-                    >read more</a
-                  >
-                </div>
-              </div>
-            </div>
-            <!-- Blog card-->
-
-            <div class="bg-gray-100 h-full">
-              <div class="relative rounded shadow-lg bg-white h-full">
-                <div class="p-8 h-full flex flex-col justify-between">
-                  <div>
-                    <h4 class="text-2xl font-bold mb-2">
-                      Importance of have a Will prepared from an Immigrant’s
-                      perspective
-                    </h4>
-                    <p class="text-gray-700 text-sm">June 13, 2023</p>
-                    <p class="text-gray-700 mt-4">
-                      In the pursuit of new beginnings in a foreign land,
-                      immigrants often find themselves immersed in...
-                    </p>
-                  </div>
-
-                  <a
-                    href="blogs/importance-of-have-a-will-prepared-from-an-immigrant-s-perspective.html"
-                    rel="  noopener"
-                    class="mt-4 uppercase w-max text-color-primary inline-block underline font-semibold underline-offset-4 text-sm text-gray-700"
-                    >read more</a
-                  >
-                </div>
-              </div>
-            </div>
+            <!-- Blog cards will be dynamically inserted here by recentPosts.js -->
           </div>
         </div>
       </section>
+
+      <!-- Include the recentPosts.js script -->
+      <script src="js/recentPosts.js"></script>
 
       <!-- Testimonials -->
       <section class="relative py-16 px-8" id="testimonials">
@@ -1126,5 +1032,6 @@
     </div> -->
     <script src="js/index.js"></script>
     <script src="js/swiper.js"></script>
+    <script src="js/latestNews.js"></script>
   </body>
 </html>
