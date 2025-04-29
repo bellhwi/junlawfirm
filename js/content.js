@@ -30,6 +30,7 @@ document.addEventListener('DOMContentLoaded', () => {
       'NIW application and F1 status',
       'Key Insights and Strategies for a Successful EB-2 NIW (National Interest Waiver) Application',
       'How to Effectively Demonstrate Future Plans in an NIW Application',
+      'DHS Restores SEVIS Records for International Students — But the Future Remains Uncertain',
     ],
     '/practices/marriage-green-card': [
       'Who can be a Sponsor for marriage Green Card?',
@@ -78,6 +79,7 @@ document.addEventListener('DOMContentLoaded', () => {
     'Why Was This Accountants NIW denied',
     'NIW Success Story: Pakistani Civil Engineer Paving the Way for Seismic Safety in the U.S.',
     'NIW Success Story: Mr. Lee – A Battery Recycling Innovator Advancing Renewable Energy in the U.S.',
+    'NIW Success Story: A Professional Specializing In New Drug Development',
   ]
 
   const artistsAndNiwHeadings = [
