@@ -42,6 +42,7 @@ document.addEventListener('DOMContentLoaded', () => {
       'Waiver of Inadmissibility',
       'K Visa Fiance Visa',
       'Green Card Application Through Marriage and Estate Planning Featuring Prenuptial Agreement',
+      'Navigating the Marriage-Based Green Card Process Through Concurrent Filing',
     ],
     '/practices/asylum-application-and-defense-of-deportation': [
       'Asylum',
@@ -86,6 +87,8 @@ document.addEventListener('DOMContentLoaded', () => {
     'Artists and NIW',
     'NIW for Artists Required for Higher Standard of Review',
     'Art as a National Asset: Crafting a Compelling NIW Case for Artists',
+    'A Strong NIW Case for Visual Artists: A Hypothetical Example in Installation Art',
+    'National Interest Waiver (NIW) for Visual Artists',
   ]
 
   const appendHeadings = (headings, containerId) => {
