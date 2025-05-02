@@ -92,6 +92,7 @@ document.addEventListener('DOMContentLoaded', () => {
     'Art as a National Asset: Crafting a Compelling NIW Case for Artists',
     'A Strong NIW Case for Visual Artists: A Hypothetical Example in Installation Art',
     'National Interest Waiver (NIW) for Visual Artists',
+    'Can My Art Really Matter to American Society?',
   ]
 
   const appendHeadings = (headings, containerId) => {
