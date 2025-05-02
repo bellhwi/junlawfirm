@@ -31,6 +31,9 @@ document.addEventListener('DOMContentLoaded', () => {
       'Key Insights and Strategies for a Successful EB-2 NIW (National Interest Waiver) Application',
       'How to Effectively Demonstrate Future Plans in an NIW Application',
       'DHS Restores SEVIS Records for International Students — But the Future Remains Uncertain',
+      'NIW Documents – Business Plan (1)',
+      'NIW Documents - Business Plan (2)',
+      'NIW Documents - Business Plan (3)',
     ],
     '/practices/marriage-green-card': [
       'Who can be a Sponsor for marriage Green Card?',
