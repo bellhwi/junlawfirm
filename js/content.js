@@ -34,6 +34,7 @@ document.addEventListener('DOMContentLoaded', () => {
       'NIW Documents – Business Plan (1)',
       'NIW Documents - Business Plan (2)',
       'NIW Documents - Business Plan (3)',
+      'Why National Interest Waiver (NIW) Petitions Require Strategy, Not Just Qualifications',
     ],
     '/practices/marriage-green-card': [
       'Who can be a Sponsor for marriage Green Card?',
@@ -46,10 +47,18 @@ document.addEventListener('DOMContentLoaded', () => {
       'K Visa Fiance Visa',
       'Green Card Application Through Marriage and Estate Planning Featuring Prenuptial Agreement',
       'Navigating the Marriage-Based Green Card Process Through Concurrent Filing',
+      'Hindu Divorce and Bigamy in U.S. Immigration Law',
+      'Green Card Through Marriage : Document: Divorce Decree',
+      'What Happens If You Don’t Get Married After Entering the U.S. on a K-1 Visa?',
+      'Why is a Prenuptial Agreement Important When Applying for a Marriage-Based Green Card?',
     ],
     '/practices/asylum-application-and-defense-of-deportation': [
       'Asylum',
       'Defensive Asylum vs. Affirmative Asylum',
+    ],
+    '/practices/personal-injury': [
+      'Personal Injury',
+      'Indiana Car Accident Guide: Procedures, Comparative Fault, and Lost Wages',
     ],
     '/practices/wills-and-trusts': [
       'Importance of having a Will prepared for an Immigrant',
