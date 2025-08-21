@@ -1,4 +1,4 @@
-Law Office of Hong-min Jun P.C Website
+Law Office of Hong-min Jun P.C
 ======================================
 
 A modern and professional website redesign for a law firm, designed to showcase expertise and make content updates effortless.
